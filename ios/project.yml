@@ -1,0 +1,36 @@
+name: ManeNav
+options:
+  bundleIdPrefix: com.manenav
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.2"
+
+targets:
+  ManeNav:
+    type: application
+    platform: iOS
+    sources:
+      - path: ManeNav/Sources
+    info:
+      path: ManeNav/Info.plist
+      properties:
+        CFBundleDisplayName: ManeNav
+        UILaunchStoryboardName: ""
+        NSCameraUsageDescription: "Camera required for navigation"
+        NSMicrophoneUsageDescription: "Microphone not used"
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UIApplicationSupportsIndirectInputEvents: true
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+          NSAllowsLocalNetworking: true
+        UIRequiredDeviceCapabilities:
+          - arkit
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.manenav.app
+        SWIFT_VERSION: "5.9"
+        IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        ENABLE_BITCODE: NO
+        DEBUG_INFORMATION_FORMAT: dwarf-with-dsym

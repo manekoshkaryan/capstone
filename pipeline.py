@@ -12,7 +12,8 @@ load_dotenv()
 
 from config import AppConfig
 from perception.detector import ObjectDetector
-from perception.depth_estimator import DepthEstimator
+from perception.depth_estimator import DepthEstimator, LiDARDepthSource
+from interfaces.lidar_depth_server import LiDARDepthServer
 from perception.tracker import MultiObjectTracker, TrackedObject, RawDetection
 from perception.calibration import CalibrationData
 from perception.distance_fusion import HybridDistanceEstimator, colorize_depth
@@ -247,6 +248,8 @@ class Pipeline:
 
         self._detector = ObjectDetector(config)
         self._depth_estimator = DepthEstimator(config)
+        self._lidar_server = LiDARDepthServer(port=8444)
+        self._lidar_source = LiDARDepthSource(self._lidar_server)
         self._tracker = MultiObjectTracker(
             max_age=config.tracker_max_age,
             min_hits=config.tracker_min_hits,
@@ -376,6 +379,8 @@ class Pipeline:
 
     def start(self):
         logger.info("Pipeline starting — loading models...")
+        self._lidar_server.start()
+        logger.info("LiDAR depth server started on ws://0.0.0.0:8444/depth")
         self._detector.load()
         self._depth_estimator.load()
 
@@ -594,9 +599,10 @@ class Pipeline:
     def _depth_loop(self):
         last_depth_frame_id = -1
         interval = self._config.depth_interval_frames
+        _lidar_active_logged = False
 
         while self._running:
-            if self._config.paused or not self._depth_estimator.is_loaded:
+            if self._config.paused:
                 time.sleep(0.05)
                 continue
 
@@ -611,11 +617,22 @@ class Pipeline:
 
             last_depth_frame_id = frame_id
             t0 = time.perf_counter()
-            try:
-                depth_map = self._depth_estimator.estimate(frame)
-            except Exception as e:
-                logger.warning(f"Depth exception: {e}")
-                depth_map = None
+
+            # Try LiDAR first (iOS app) — zero Mac compute, ±1-2cm accuracy
+            depth_map = self._lidar_source.get(frame)
+            if depth_map is not None:
+                if not _lidar_active_logged:
+                    logger.info("LiDAR depth active — Depth-Anything bypassed")
+                    _lidar_active_logged = True
+            else:
+                _lidar_active_logged = False
+                if self._depth_estimator.is_loaded:
+                    try:
+                        depth_map = self._depth_estimator.estimate(frame)
+                    except Exception as e:
+                        logger.warning(f"Depth exception: {e}")
+                        depth_map = None
+
             latency_ms = (time.perf_counter() - t0) * 1000.0
             self._state.set_depth(depth_map, frame_id, latency_ms)
 
