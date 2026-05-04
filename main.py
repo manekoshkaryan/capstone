@@ -8,22 +8,22 @@ import time
 import numpy as np
 
 from config import AppConfig
-from calibration import CalibrationData, run_calibration_workflow
+from perception.calibration import CalibrationData, run_calibration_workflow
 from pipeline import Pipeline
-from renderer import Renderer
-from speech_engine import SpeechEngine
-from speech_policy import ConversationMode
-from event_logger import EventLogger
-from stats_analyzer import analyze_events, print_summary_table, save_summary_json
-from stats_plots import generate_plots
-from communication_protocols import ProtocolMode
+from interfaces.renderer import Renderer
+from speech.speech_engine import SpeechEngine
+from speech.speech_policy import ConversationMode
+from utils.event_logger import EventLogger
+from stats.stats_analyzer import analyze_events, print_summary_table, save_summary_json
+from stats.stats_plots import generate_plots
+from protocols.communication_protocols import ProtocolMode
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     handlers=[
         logging.StreamHandler(sys.stdout),
-        logging.FileHandler("navvision.log", mode="a", encoding="utf-8"),
+        logging.FileHandler("data/logs/navvision.log", mode="a", encoding="utf-8"),
     ],
 )
 logger = logging.getLogger(__name__)

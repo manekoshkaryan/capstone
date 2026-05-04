@@ -1,0 +1,5 @@
+protocol,messages,avg_response_latency_ms,avg_speech_latency_ms,avg_decision_latency_ms,avg_detection_latency_ms,avg_cascaded_latency_ms,avg_improvement_pct,avg_word_count,stop_warnings,directional_commands,clear_path_messages,info_messages,duplicate_speech_events,overlapping_speech_errors
+adaptive,8,,,,,,,4.125,3,3,1,1,0,0
+descriptive,8,,,,,,,9,3,3,1,1,0,0
+minimal,8,,,,,,,3.75,3,3,1,1,0,0
+proactive,8,,,,,,,4.875,3,4,1,0,0,0

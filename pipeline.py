@@ -8,36 +8,36 @@ import numpy as np
 from typing import Optional, List, Dict, Any, Tuple
 
 from config import AppConfig
-from detector import ObjectDetector
-from depth_estimator import DepthEstimator
-from tracker import MultiObjectTracker, TrackedObject, RawDetection
-from calibration import CalibrationData
-from distance_fusion import HybridDistanceEstimator, colorize_depth
-from floor_segmenter import FloorSegmenter, FloorResult
-from free_space import FreeSpaceAnalyzer, GuidanceController, FreeSpaceFrame
-from landmarks import LandmarkMemory
-from imu_sensor import IMUSensor, SerialIMU, FlowEstimatedIMU
-from utils import FPSCounter, Timer, load_vocabulary
-from navigator import (
+from perception.detector import ObjectDetector
+from perception.depth_estimator import DepthEstimator
+from perception.tracker import MultiObjectTracker, TrackedObject, RawDetection
+from perception.calibration import CalibrationData
+from perception.distance_fusion import HybridDistanceEstimator, colorize_depth
+from perception.floor_segmenter import FloorSegmenter, FloorResult
+from navigation.free_space import FreeSpaceAnalyzer, GuidanceController, FreeSpaceFrame
+from navigation.landmarks import LandmarkMemory
+from perception.imu_sensor import IMUSensor, SerialIMU, FlowEstimatedIMU
+from utils.utils import FPSCounter, Timer, load_vocabulary
+from navigation.navigator import (
     prioritize_objects, build_navigation_record, tracked_to_detection,
     get_urgency, get_direction, meters_to_verbal,
 )
-from speech_engine import SpeechEngine
-from speech_policy import (
+from speech.speech_engine import SpeechEngine
+from speech.speech_policy import (
     SpeechPolicy, NavigationContext, ConversationMode, ConversationModeManager,
 )
-from event_logger import EventLogger
-from speech_input import SpeechListener, VoiceCommand, parse_command
-from conversation import ConversationHandler
-from voice_context import VoiceContextProvider
-from communication_protocols import (
+from utils.event_logger import EventLogger
+from speech.speech_input import SpeechListener, VoiceCommand, parse_command
+from speech.conversation import ConversationHandler
+from speech.voice_context import VoiceContextProvider
+from protocols.communication_protocols import (
     PerceptionInput, ProtocolMode, ProtocolMessage,
     render as render_protocol, coerce_mode as coerce_protocol_mode,
     normalize_direction, ACTION_STOP, ACTION_DIRECTIONAL, ACTION_CLEAR, ACTION_INFO,
     CascadedBaselineConfig,
 )
-from protocol_logger import ProtocolLogger, ProtocolEvent
-from protocol_evaluator import (
+from protocols.protocol_logger import ProtocolLogger, ProtocolEvent
+from protocols.protocol_evaluator import (
     run_evaluation as run_protocol_evaluation_offline,
     builtin_scenarios,
     run_scenarios as run_protocol_scenarios,
@@ -444,8 +444,8 @@ class Pipeline:
         return None
 
     def _open_phone_camera(self, src: str):
-        from phone_camera import PhoneCameraServer, PhoneCameraSource, _local_ip
-        from web_output_server import WebOutputServer
+        from interfaces.phone_camera import PhoneCameraServer, PhoneCameraSource, _local_ip
+        from interfaces.web_output_server import WebOutputServer
         cfg = self._config
         cfg.phone_mode = True
         if src in ("xiaomi", "iphone"):
@@ -1406,7 +1406,7 @@ class Pipeline:
         urgency: str = "info",
         include_free_space: bool = True,
     ) -> PerceptionInput:
-        from navigator import get_bearing
+        from navigation.navigator import get_bearing
         fw = self._config.frame_width
         label = ""
         distance = None
@@ -1835,7 +1835,7 @@ class Pipeline:
             "front": ("slight_left", "center", "slight_right"),
         }[direction]
 
-        from navigator import get_bearing
+        from navigation.navigator import get_bearing
         fw = self._config.frame_width
 
         # Front-clear short-circuit: if user asked about ahead and the path

@@ -1,0 +1,33 @@
+scenario_id,scenario_description,protocol,input_label,input_distance,input_direction,message,word_count,action_category
+1,chair center 0.6m,minimal,chair,0.6,center,"Chair ahead, 0.6 meters.",4,stop
+1,chair center 0.6m,descriptive,chair,0.6,center,There is a chair ahead about 0.6 meters away.,9,stop
+1,chair center 0.6m,proactive,chair,0.6,center,"Obstacle ahead, stop.",3,stop
+1,chair center 0.6m,adaptive,chair,0.6,center,Stop. Obstacle ahead.,3,stop
+2,person left 1.2m,minimal,person,1.2,left,"Person left, 1.2 meters.",4,directional
+2,person left 1.2m,descriptive,person,1.2,left,There is a person on your left about 1.2 meters away.,11,directional
+2,person left 1.2m,proactive,person,1.2,left,"Obstacle on your left, move slightly right.",7,directional
+2,person left 1.2m,adaptive,person,1.2,left,"Obstacle on your left, move right.",6,directional
+3,table right 1.8m,minimal,table,1.8,right,"Table right, 1.8 meters.",4,directional
+3,table right 1.8m,descriptive,table,1.8,right,There is a table on your right about 1.8 meters away.,11,directional
+3,table right 1.8m,proactive,table,1.8,right,"Obstacle on your right, move slightly left.",7,directional
+3,table right 1.8m,adaptive,table,1.8,right,"Obstacle on your right, move left.",6,directional
+4,no object,minimal,,,ahead,Clear path.,2,clear
+4,no object,descriptive,,,ahead,The path ahead appears clear.,5,clear
+4,no object,proactive,,,ahead,"Path ahead is clear, continue forward.",6,clear
+4,no object,adaptive,,,ahead,Path ahead is clear.,4,clear
+5,door center 3.0m,minimal,door,3.0,center,"Door ahead, 3.0 meters.",4,info
+5,door center 3.0m,descriptive,door,3.0,center,There is a door ahead about 3.0 meters away.,9,info
+5,door center 3.0m,proactive,door,3.0,center,"Obstacle ahead, move slightly right.",5,directional
+5,door center 3.0m,adaptive,door,3.0,center,"Door ahead, 3.0 meters.",4,info
+6,obstacle center 0.7m left side open,minimal,obstacle,0.7,center,"Obstacle ahead, 0.7 meters.",4,stop
+6,obstacle center 0.7m left side open,descriptive,obstacle,0.7,center,There is an obstacle ahead about 0.7 meters away.,9,stop
+6,obstacle center 0.7m left side open,proactive,obstacle,0.7,center,"Obstacle ahead, stop.",3,stop
+6,obstacle center 0.7m left side open,adaptive,obstacle,0.7,center,Stop. Obstacle ahead.,3,stop
+7,obstacle center 0.7m right side open,minimal,obstacle,0.7,center,"Obstacle ahead, 0.7 meters.",4,stop
+7,obstacle center 0.7m right side open,descriptive,obstacle,0.7,center,There is an obstacle ahead about 0.7 meters away.,9,stop
+7,obstacle center 0.7m right side open,proactive,obstacle,0.7,center,"Obstacle ahead, stop.",3,stop
+7,obstacle center 0.7m right side open,adaptive,obstacle,0.7,center,Stop. Obstacle ahead.,3,stop
+8,"two objects, closest is person at 0.9m",minimal,person,0.9,center,"Person ahead, 0.9 meters.",4,directional
+8,"two objects, closest is person at 0.9m",descriptive,person,0.9,center,There is a person ahead about 0.9 meters away.,9,directional
+8,"two objects, closest is person at 0.9m",proactive,person,0.9,center,"Obstacle ahead, move slightly right.",5,directional
+8,"two objects, closest is person at 0.9m",adaptive,person,0.9,center,"Obstacle ahead, move right.",4,directional

@@ -174,8 +174,8 @@ class AppConfig:
 
     enable_speech: bool = True
     enable_event_log: bool = True
-    event_log_file: str = "events.jsonl"
-    nav_log_file: str = "navigation.jsonl"
+    event_log_file: str = "data/logs/events.jsonl"
+    nav_log_file: str = "data/logs/navigation.jsonl"
 
     # Wise speech policy thresholds — see speech_policy.SpeechPolicy.
     # Repetition / risk-band constants (assistive-nav spec).
@@ -308,7 +308,7 @@ class AppConfig:
     voice_input_ambient_calibration_s: float = 0.6
     voice_input_dynamic_energy: bool = True
 
-    session_summary_dir: str = "."
+    session_summary_dir: str = "data/sessions"
     session_plots_dir: str = "."
     auto_generate_plots: bool = False
 
@@ -359,7 +359,7 @@ class AppConfig:
 
     protocol_mode: str = "adaptive"
     enable_protocol_logging: bool = True
-    protocol_events_file: str = "protocol_events.jsonl"
+    protocol_events_file: str = "data/logs/protocol_events.jsonl"
     protocol_metrics_file: str = "protocol_metrics.csv"
     latency_comparison_file: str = "latency_comparison.csv"
     protocol_summary_csv: str = "protocol_summary.csv"
