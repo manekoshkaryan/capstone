@@ -1,0 +1,82 @@
+person
+pedestrian
+bicycle
+motorcycle
+car
+bus
+truck
+wheelchair
+stroller
+dog
+cat
+backpack
+handbag
+suitcase
+shopping bag
+bottle
+cup
+chair
+bench
+table
+sofa
+bed
+door
+doorway
+stairs
+escalator
+elevator
+wall
+pillar
+pole
+curb
+sidewalk
+crosswalk
+traffic light
+stop sign
+traffic cone
+barrier
+trash can
+pothole
+puddle
+step
+ramp
+tree
+branch
+signboard
+kiosk
+shelf
+laptop
+phone
+monitor
+keyboard
+cabinet
+sink
+toilet
+refrigerator
+microwave
+fire hydrant
+parking meter
+window
+fence
+gate
+bollard
+manhole cover
+speed bump
+construction barrier
+umbrella
+luggage
+skateboard
+scooter
+bus stop
+vending machine
+ATM
+street lamp
+fire extinguisher
+baby stroller
+shopping cart
+trolley
+box
+crate
+pallet
+ladder
+toolbox
