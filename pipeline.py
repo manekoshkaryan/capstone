@@ -7,6 +7,9 @@ import time
 import numpy as np
 from typing import Optional, List, Dict, Any, Tuple
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from config import AppConfig
 from perception.detector import ObjectDetector
 from perception.depth_estimator import DepthEstimator
@@ -14,7 +17,7 @@ from perception.tracker import MultiObjectTracker, TrackedObject, RawDetection
 from perception.calibration import CalibrationData
 from perception.distance_fusion import HybridDistanceEstimator, colorize_depth
 from perception.floor_segmenter import FloorSegmenter, FloorResult
-from navigation.free_space import FreeSpaceAnalyzer, GuidanceController, FreeSpaceFrame
+from navigation.free_space import FreeSpaceAnalyzer, FreeSpaceFrame
 from navigation.landmarks import LandmarkMemory
 from perception.imu_sensor import IMUSensor, SerialIMU, FlowEstimatedIMU
 from utils.utils import FPSCounter, Timer, load_vocabulary
@@ -24,7 +27,7 @@ from navigation.navigator import (
 )
 from speech.speech_engine import SpeechEngine
 from speech.speech_policy import (
-    SpeechPolicy, NavigationContext, ConversationMode, ConversationModeManager,
+    ConversationMode, ConversationModeManager,
 )
 from utils.event_logger import EventLogger
 from speech.speech_input import SpeechListener, VoiceCommand, parse_command
@@ -42,6 +45,8 @@ from protocols.protocol_evaluator import (
     builtin_scenarios,
     run_scenarios as run_protocol_scenarios,
 )
+from navigation.llm_guide import LLMGuide
+from speech.piper_tts import PiperTTS
 
 logger = logging.getLogger(__name__)
 
@@ -259,7 +264,6 @@ class Pipeline:
             self._imu = IMUSensor()
         self._floor = FloorSegmenter(config) if config.enable_floor_segmentation else None
         self._free_space = FreeSpaceAnalyzer(config) if config.enable_guidance else None
-        self._guidance = GuidanceController(config, speech) if config.enable_guidance else None
         self._landmarks = LandmarkMemory(config, imu=self._imu) if config.enable_landmarks else None
 
         self._state = SharedState()
@@ -297,20 +301,18 @@ class Pipeline:
             "none": 0,
         }
 
-        # Wise announcement throttling — only governs unsolicited safety
-        # announcements; user-prompted answers bypass this and call _say().
-        self._speech_policy = SpeechPolicy(config)
         self._mode_manager = ConversationModeManager(ConversationMode.PASSIVE)
-        # Make GuidanceController mode-aware so it stays quiet during
-        # MINIMAL_ALERT / CONVERSATION (except for critical commands).
-        if self._guidance is not None:
-            self._guidance.mode_manager = self._mode_manager
-        # Free-form conversational fallback for anything the rigid command
-        # parser does not match — keeps voice-to-voice from feeling broken.
         self._conversation = ConversationHandler(self)
-        # Latest GuidanceCommand from FreeSpace; consumed once per cycle by
-        # _process_speech via SpeechPolicy.evaluate_guidance.
-        self._latest_guidance_cmd = None
+
+        # LLM-based guidance engine + Piper TTS.
+        self._piper = PiperTTS()
+        self._llm_guide = LLMGuide(
+            model=getattr(config, "llm_guide_model", "gpt-4o-mini"),
+            stop_distance_m=getattr(config, "guidance_stop_distance_m", 0.8),
+            periodic_interval_s=getattr(config, "llm_guide_interval_s", 5.0),
+            on_guidance=self._on_llm_guidance,
+        )
+        logger.info("LLM guidance engine active (GPT + Piper TTS)")
 
         # Hazard timestamp = first time critical guidance appeared in the
         # current critical episode. Cleared when no critical command in flight.
@@ -362,7 +364,7 @@ class Pipeline:
     def set_mode(self, mode: ConversationMode, announce: bool = True) -> None:
         """Switch conversation mode and optionally voice the change."""
         if self._mode_manager.set(mode):
-            self._speech_policy.reset()
+
             if announce:
                 phrases = {
                     ConversationMode.PASSIVE: "Passive mode.",
@@ -698,184 +700,52 @@ class Pipeline:
                 raw_frame=snap.get("raw_frame"),
             )
 
-            if self._config.enable_speech or self._config.enable_event_log:
+            if self._config.enable_event_log:
                 nav_record = build_navigation_record(
                     tracked, frame_id, self._config.frame_width,
                     max_dist_m=self._config.nav_max_announce_dist_m,
                 )
-                if self._config.enable_speech:
-                    self._process_speech(tracked)
-                if self._config.enable_event_log:
-                    self._event_logger.log_detections(tracked, frame_id)
-                    self._event_logger.log_navigation(nav_record)
+                self._event_logger.log_detections(tracked, frame_id)
+                self._event_logger.log_navigation(nav_record)
 
-    def _process_speech(self, tracked: List[TrackedObject]):
-        if self._speech is None:
+
+    def _on_llm_guidance(self, guidance) -> None:
+        """Fires when LLMGuide has a GPT response. Synthesizes once with Piper,
+        plays on laptop and streams the same WAV to the phone."""
+        import base64
+        mode = self._mode_manager.mode
+        if mode not in (ConversationMode.CONTINUOUS_GUIDANCE, ConversationMode.PASSIVE):
             return
-        fw = self._config.frame_width
-        detections: List[dict] = []
-        for obj in tracked:
-            if not obj.is_stable:
-                continue
-            det = tracked_to_detection(obj, fw)
-            if det["urgency"] == "beyond":
-                continue
-            det["track_id"] = obj.track_id
-            detections.append(det)
-
-        # Build perception snapshot from the latest free-space frame so the
-        # policy can decide whether the front path is clear.
-        cfg = self._config
-        with self._state._lock:
-            fs_frame = self._state.free_space
-        ctx = NavigationContext.from_free_space(
-            fs_frame,
-            detections,
-            min_go_distance_m=cfg.guidance_min_go_distance_m,
-            stop_distance_m=cfg.guidance_stop_distance_m,
-        )
-
-        # Single emit point. Peek both sources (no state mutation), pick
-        # the winner, then commit only the winner's side effects so the
-        # loser does not poison throttling/global-gap state.
-        det_decision, det_commit = self._speech_policy.peek_detection(
-            detections, ctx, self._mode_manager.mode,
-        )
-        guide_decision, guide_commit = self._speech_policy.peek_guidance(
-            self._latest_guidance_cmd, ctx, self._mode_manager.mode,
-        )
-
-        rank = {"critical": 0, "warn": 1, "info": 2}
-        candidates = []
-        if det_decision.speak and det_decision.text:
-            candidates.append((det_decision, det_commit, "det"))
-        if guide_decision.speak and guide_decision.text:
-            candidates.append((guide_decision, guide_commit, "guide"))
-
-        if candidates:
-            candidates.sort(key=lambda x: (rank.get(x[0].urgency, 9), 0 if x[0].action else 1))
-            final, commit_fn, source = candidates[0]
-            # Commit policy depends on mode.
-            #
-            # PASSIVE / MINIMAL_ALERT / CONVERSATION: commit ALL would-be-
-            #   spoken sources so the loser does not re-fire next cycle for
-            #   the same physical obstacle (covered by the winner).
-            #
-            # CONTINUOUS_GUIDANCE: commit only the winning source. The user
-            #   is walking and needs guidance even if a detection callout
-            #   ("chair, two meters") just spoke — the next cycle should
-            #   still be free to add "Move slightly left." Without this, the
-            #   guidance entry would be marked handled and silenced for the
-            #   full mode interval, which is exactly the "doesn't actually
-            #   guide continuously" symptom we are fixing.
-            if self._mode_manager.mode == ConversationMode.CONTINUOUS_GUIDANCE:
-                if commit_fn is not None:
-                    commit_fn()
-            else:
-                for _d, _c, _ in candidates:
-                    if _c is not None:
-                        _c()
-            self._speech_policy._refresh_last_seen(detections, None)
-            logger.debug(
-                f"speech-policy SPEAK [{source}] ({final.reason}, "
-                f"mode={self._mode_manager.mode.value}): {final.text!r}"
-            )
-            now = time.time()
-            fresh_reasons = {
-                "new", "guidance-new", "risk-up", "guidance-risk-up", "closer",
-            }
-            is_fresh = final.reason in fresh_reasons
-            if final.urgency == "critical":
-                if is_fresh or self._critical_hazard_ts is None:
-                    self._critical_hazard_ts = now
-                hazard_ts = self._critical_hazard_ts
-            else:
-                self._critical_hazard_ts = None
-                hazard_ts = None
-            meta = {
-                "source": source,
-                "action": final.action,
-                "hazard_ts": hazard_ts if is_fresh else None,
-                "is_repeat": (not is_fresh) and final.urgency == "critical",
-                "reason": final.reason,
-            }
-            t_decision_started = now
-            perception = self._build_perception_for_decision(final, ctx)
-            override_action = (final.action or "").upper()
-            mode_override: Optional[ProtocolMode] = None
-            if final.urgency == "critical" and override_action == "STOP":
-                mode_override = ProtocolMode.ADAPTIVE
-            proto_msg = render_protocol(
-                mode_override or self._protocol_mode,
-                perception,
-            )
-            t_message_generated = time.time()
-            spoken_text = proto_msg.text
-            if not spoken_text:
-                spoken_text = final.text
-            meta["protocol_text"] = proto_msg.text
-            meta["protocol_mode"] = proto_msg.protocol
-            meta["selected_protocol"] = self._protocol_mode.value
-            meta["protocol_action"] = proto_msg.action_category
-            meta["protocol_word_count"] = proto_msg.word_count
-            meta["perception"] = {
-                "label": perception.label,
-                "distance_m": perception.distance_m,
-                "direction": perception.direction,
-                "front_clear": perception.front_clear,
-                "left_clear_m": perception.left_clear_m,
-                "right_clear_m": perception.right_clear_m,
-            }
-            meta["device"] = self._active_device_label()
-            meta["t_frame_received"] = self._state.raw_frame_wall_ts or None
-            meta["t_detection_done"] = self._state.det_done_wall_ts or None
-            meta["t_decision_started"] = t_decision_started
-            meta["t_message_generated"] = t_message_generated
-            self._last_protocol_message = proto_msg
-            self._last_protocol_perception = perception
-            meta_key = f"{spoken_text}|{final.urgency}"
-            self._pending_speech_meta[meta_key] = dict(meta)
-            accepted = self._speech.say(spoken_text, urgency=final.urgency, meta=meta)
-            if not accepted:
-                self._pending_speech_meta.pop(meta_key, None)
-                self._record_protocol_event(
-                    msg=proto_msg,
-                    perception=perception,
-                    source="auto",
-                    device=self._active_device_label(),
-                    ts_frame=meta["t_frame_received"],
-                    ts_det=meta["t_detection_done"],
-                    ts_decision=t_decision_started,
-                    ts_message=t_message_generated,
-                    ts_tts=time.time(),
-                    ts_audio_start=None,
-                    ts_audio_end=None,
-                    is_duplicate=True,
-                    overlap_skipped=False,
-                    selected=self._protocol_mode,
-                )
-            # Mirror only true safety actions (STOP / MOVE_* / SLOW_DOWN) into
-            # the shared voice context and the phone-side SSE channel. Info-
-            # level updates like "Continue straight." must NOT duck the
-            # OpenAI Realtime audio every cycle in CONTINUOUS_GUIDANCE.
-            action_upper = (final.action or "").upper()
-            is_safety_action = action_upper in (
-                "STOP", "MOVE_LEFT", "MOVE_RIGHT", "BEAR_LEFT", "BEAR_RIGHT",
-                "GO_LEFT", "GO_RIGHT", "SLOW_DOWN", "REVERSE",
-            )
-            if final.urgency in ("warn", "critical") or is_safety_action:
-                self._broadcast_safety(
-                    action=action_upper or ("STOP" if "stop" in (final.text or "").lower() else ""),
-                    text=final.text,
-                    urgency=final.urgency,
-                )
-        else:
-            self._speech_policy._refresh_last_seen(detections, None)
-            if det_decision.detection is not None or guide_decision.action:
-                logger.debug(
-                    f"speech-policy SILENT (det={det_decision.reason}, "
-                    f"guide={guide_decision.reason}, mode={self._mode_manager.mode.value})"
-                )
+        text = guidance.speech
+        urgency = guidance.urgency
+        # Synthesize once — reuse bytes for both laptop and phone.
+        try:
+            wav = self._piper.synthesize_bytes(text)
+        except Exception as e:
+            logger.warning(f"Piper synthesis failed: {e}")
+            wav = b""
+        # Play on laptop.
+        if wav:
+            import threading, tempfile, subprocess, os
+            def _play():
+                import tempfile, subprocess, os
+                with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
+                    f.write(wav); tmp = f.name
+                try:
+                    subprocess.run(["afplay", tmp], check=True, capture_output=True)
+                except Exception:
+                    pass
+                finally:
+                    try: os.unlink(tmp)
+                    except OSError: pass
+            threading.Thread(target=_play, daemon=True).start()
+        # Push same audio to phone.
+        if wav and self._phone_server is not None and self._phone_active_label:
+            try:
+                wav_b64 = base64.b64encode(wav).decode()
+                self._phone_server.push_audio(self._phone_active_label, wav_b64, text, urgency)
+            except Exception as e:
+                logger.debug(f"Phone audio push failed: {e}")
 
     def _on_voice_command(self, cmd: VoiceCommand):
         if not self._state.push_command(cmd):
@@ -988,14 +858,7 @@ class Pipeline:
         if not text:
             return
         try:
-            with self._state._lock:
-                fs = self._state.free_space
-            ctx = NavigationContext.from_free_space(
-                fs, [],
-                min_go_distance_m=self._config.guidance_min_go_distance_m,
-                stop_distance_m=self._config.guidance_stop_distance_m,
-            ) if fs is not None else None
-            reply = self._conversation.respond(text, ctx)
+            reply = self._conversation.respond(text, None)
         except Exception as e:
             logger.error(f"conversation handler error: {e}")
             reply = None
@@ -1144,15 +1007,15 @@ class Pipeline:
             # "stop guiding" also drops continuous-guidance mode back to passive.
             if self._mode_manager.mode == ConversationMode.CONTINUOUS_GUIDANCE:
                 self._mode_manager.set(ConversationMode.PASSIVE)
-                self._speech_policy.reset()
+    
             self._say("Guidance stopped.")
         elif ctype == "set_minimal_alert":
             self._mode_manager.set(ConversationMode.MINIMAL_ALERT)
-            self._speech_policy.reset()
+
             self._say("Minimal alert mode. I will only warn you of danger.")
         elif ctype == "set_continuous_guidance":
             self._mode_manager.set(ConversationMode.CONTINUOUS_GUIDANCE)
-            self._speech_policy.reset()
+
             self._say("Continuous guidance on.")
         elif ctype == "set_verbose_describe":
             # One-shot rich description; mode itself returns to passive after.
@@ -1290,45 +1153,17 @@ class Pipeline:
             except Exception as e:
                 logger.debug(f"Free-space analysis failed: {e}")
 
-        guidance_action = ""
-        guidance_text = ""
-        if self._guidance is not None and free_space_frame is not None:
-            target_label = ""
-            target_bearing = None
-            with self._state._lock:
-                target_label = self._state.target_landmark
-            if target_label and self._landmarks is not None:
-                lm = self._landmarks.find(target_label)
-                if lm is not None:
-                    rel, _ = self._landmarks.relative_bearing(lm)
-                    target_bearing = rel
-            # Build perception dicts manehguide expects (label / distance / bearing).
-            tracked_dicts: List[dict] = []
+        # LLM guidance — feed scene to GPT engine for natural language direction.
+        if free_space_frame is not None:
+            llm_tracked = []
             for obj in tracked:
                 if not obj.is_stable or obj.distance_m is None:
                     continue
-                tracked_dicts.append(tracked_to_detection(obj, W))
+                llm_tracked.append(tracked_to_detection(obj, W))
             try:
-                cmd = self._guidance.step(
-                    free_space_frame,
-                    target_label or None,
-                    target_bearing,
-                    tracked_detections=tracked_dicts,
-                )
-                # Stash for SpeechPolicy.evaluate_guidance — single emit point.
-                self._latest_guidance_cmd = cmd
-                if cmd is not None:
-                    guidance_action = cmd.action
-                    guidance_text = cmd.text
-                    if self._phone_server is not None and self._phone_active_label:
-                        try:
-                            self._phone_server.push_guidance(
-                                self._phone_active_label, guidance_action, guidance_text,
-                            )
-                        except Exception:
-                            pass
+                self._llm_guide.on_scene_update(free_space_frame, llm_tracked)
             except Exception as e:
-                logger.debug(f"Guidance step failed: {e}")
+                logger.debug(f"LLMGuide update failed: {e}")
 
         if self._landmarks is not None:
             try:
@@ -1339,8 +1174,8 @@ class Pipeline:
         self._state.set_navigation(
             floor=floor_result,
             free_space=free_space_frame,
-            guidance_action=guidance_action,
-            guidance_text=guidance_text,
+            guidance_action="",
+            guidance_text="",
             imu_pitch=imu_reading.pitch_deg,
             imu_yaw=imu_reading.yaw_deg,
             imu_valid=imu_reading.valid,
@@ -1350,9 +1185,27 @@ class Pipeline:
         return self._config
 
     def _say(self, text: str, urgency: str = "info"):
-        if self._speech is None:
-            return
-        self._speech.say(text, urgency=urgency)
+        import base64, threading, tempfile, subprocess, os
+        try:
+            wav = self._piper.synthesize_bytes(text)
+        except Exception:
+            wav = b""
+        if wav:
+            def _play():
+                with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
+                    f.write(wav); tmp = f.name
+                try: subprocess.run(["afplay", tmp], check=True, capture_output=True)
+                except Exception: pass
+                finally:
+                    try: os.unlink(tmp)
+                    except OSError: pass
+            threading.Thread(target=_play, daemon=True).start()
+            if self._phone_server is not None and self._phone_active_label:
+                try:
+                    self._phone_server.push_audio(
+                        self._phone_active_label, base64.b64encode(wav).decode(), text, urgency
+                    )
+                except Exception: pass
 
     @property
     def protocol_mode(self) -> ProtocolMode:
@@ -1459,73 +1312,6 @@ class Pipeline:
             device_label=device,
         )
 
-    def _build_perception_for_decision(
-        self, decision, ctx: NavigationContext,
-    ) -> PerceptionInput:
-        det = getattr(decision, "detection", None) or None
-        urgency = getattr(decision, "urgency", "info") or "info"
-        front_clear = bool(getattr(ctx, "front_path_clear", True))
-        left_clear = float(getattr(ctx, "left_clear_m", 0.0) or 0.0)
-        right_clear = float(getattr(ctx, "right_clear_m", 0.0) or 0.0)
-        device = self._active_device_label()
-        if det:
-            distance = det.get("distance_m")
-            if distance is not None:
-                distance = float(distance)
-            return PerceptionInput(
-                label=str(det.get("class") or det.get("label") or ""),
-                distance_m=distance,
-                direction=str(det.get("bearing") or det.get("direction") or "ahead"),
-                urgency=urgency,
-                front_clear=front_clear,
-                left_clear_m=left_clear,
-                right_clear_m=right_clear,
-                device_label=device,
-            )
-        action = (getattr(decision, "action", "") or "").upper()
-        if action == "STOP":
-            return PerceptionInput(
-                label="obstacle",
-                distance_m=0.5,
-                direction="ahead",
-                urgency=urgency,
-                front_clear=False,
-                left_clear_m=left_clear,
-                right_clear_m=right_clear,
-                device_label=device,
-            )
-        if action in ("BEAR_LEFT", "GO_LEFT", "MOVE_LEFT"):
-            return PerceptionInput(
-                label="obstacle",
-                distance_m=1.5,
-                direction="right",
-                urgency=urgency,
-                front_clear=front_clear,
-                left_clear_m=left_clear,
-                right_clear_m=right_clear,
-                device_label=device,
-            )
-        if action in ("BEAR_RIGHT", "GO_RIGHT", "MOVE_RIGHT"):
-            return PerceptionInput(
-                label="obstacle",
-                distance_m=1.5,
-                direction="left",
-                urgency=urgency,
-                front_clear=front_clear,
-                left_clear_m=left_clear,
-                right_clear_m=right_clear,
-                device_label=device,
-            )
-        return PerceptionInput(
-            label="",
-            distance_m=None,
-            direction="ahead",
-            urgency=urgency,
-            front_clear=front_clear,
-            left_clear_m=left_clear,
-            right_clear_m=right_clear,
-            device_label=device,
-        )
 
     def _emit_protocol_speech(
         self,
@@ -1578,7 +1364,8 @@ class Pipeline:
             meta_payload.update(extra_meta)
         meta_key = f"{msg.text}|{urgency}"
         self._pending_speech_meta[meta_key] = meta_payload
-        accepted = self._speech.say(msg.text, urgency=urgency, meta=meta_payload)
+        accepted = True
+        self._say(msg.text, urgency=urgency)
         if not accepted:
             self._pending_speech_meta.pop(meta_key, None)
             self._record_protocol_event(
@@ -1814,8 +1601,7 @@ class Pipeline:
         }
         meta_key = f"{msg.text}|{urgency}"
         self._pending_speech_meta[meta_key] = meta
-        if self._speech is not None:
-            self._speech.say(msg.text, urgency=urgency, meta=meta)
+        self._say(msg.text, urgency=urgency)
 
     def _speak_direction_query(self, direction: str):
         """Answer 'what is on my left/right/front?' from currently tracked objs.
@@ -1844,12 +1630,8 @@ class Pipeline:
             with self._state._lock:
                 fs = self._state.free_space
             if fs is not None and fs.sectors:
-                ctx = NavigationContext.from_free_space(
-                    fs, [],
-                    min_go_distance_m=self._config.guidance_min_go_distance_m,
-                    stop_distance_m=self._config.guidance_stop_distance_m,
-                )
-                if ctx.front_path_clear and not any(
+                center_clear = fs.center_clear_m >= self._config.guidance_min_go_distance_m
+                if center_clear and not any(
                     get_bearing(o.box, fw) in bearings for o in self._stable_objects()
                 ):
                     logger.info("voice-query front: path clear, no objects -> 'path ahead is clear'")
@@ -1898,18 +1680,19 @@ class Pipeline:
         if fs is None or not fs.sectors:
             self._say("I cannot tell yet.")
             return
-        ctx = NavigationContext.from_free_space(
-            fs, [],
-            min_go_distance_m=self._config.guidance_min_go_distance_m,
-            stop_distance_m=self._config.guidance_stop_distance_m,
-        )
-        if ctx.front_path_clear:
+        cfg = self._config
+        center_idx = len(fs.sectors) // 2
+        center_clear = fs.center_clear_m
+        if center_clear >= cfg.guidance_min_go_distance_m:
             self._say("Yes, the path ahead is clear.")
-        elif ctx.has_open_alternative:
-            side = "left" if ctx.left_clear_m > ctx.right_clear_m else "right"
-            self._say(f"Front is blocked. The {side} side is open.")
         else:
-            self._say("No clear path ahead. Please wait.")
+            left_clear = max((s.free_distance_m for s in fs.sectors[:center_idx]), default=0.0)
+            right_clear = max((s.free_distance_m for s in fs.sectors[center_idx+1:]), default=0.0)
+            if max(left_clear, right_clear) >= cfg.guidance_min_go_distance_m:
+                side = "left" if left_clear > right_clear else "right"
+                self._say(f"Front is blocked. The {side} side is open.")
+            else:
+                self._say("No clear path ahead. Please wait.")
 
     def _speak_object_location(self, target: str):
         target = (target or "").strip().lower()

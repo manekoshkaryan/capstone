@@ -183,6 +183,27 @@ function unlockTTS(){
   }catch(e){}
 }
 
+let _audioCtx = null;
+let _audioSource = null;
+function getAudioCtx(){
+  if(!_audioCtx) _audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  return _audioCtx;
+}
+async function playPiperAudio(b64){
+  try{
+    const ctx = getAudioCtx();
+    if(ctx.state === 'suspended') await ctx.resume();
+    const raw = atob(b64);
+    const buf = new Uint8Array(raw.length);
+    for(let i=0;i<raw.length;i++) buf[i]=raw.charCodeAt(i);
+    const decoded = await ctx.decodeAudioData(buf.buffer);
+    if(_audioSource){ try{ _audioSource.stop(); }catch(e){} }
+    _audioSource = ctx.createBufferSource();
+    _audioSource.buffer = decoded;
+    _audioSource.connect(ctx.destination);
+    _audioSource.start(0);
+  }catch(e){ log('piper audio: '+e); }
+}
 function speak(text, urgency){
   if(!text) return;
   try{
@@ -216,7 +237,11 @@ async function start(){
   dc.onclose = () => setStatus('dc closed','#522');
   dc.onmessage = ev => {
     let m; try{ m = JSON.parse(ev.data); }catch(e){ return; }
-    if(m.type==='speak'){
+    if(m.type==='audio'){
+      speakBan.textContent = m.text || '';
+      speakBan.className = 'banner ' + (m.urgency==='critical'?'critical':(m.urgency==='warn'?'warn':''));
+      if(m.wav) playPiperAudio(m.wav);
+    }else if(m.type==='speak'){
       speakBan.textContent = m.text || '';
       speakBan.className = 'banner ' + (m.urgency==='critical'?'critical':(m.urgency==='warn'?'warn':''));
       if(m.text) speak(m.text, m.urgency);
@@ -652,6 +677,16 @@ class PhoneCameraServer:
         if not text:
             return
         self.push_message(label, {"type": "speak", "text": text, "urgency": urgency})
+
+    def push_audio(self, label: str, wav_b64: str, text: str = "", urgency: str = "info") -> None:
+        """Send Piper-synthesized WAV (base64) to phone for playback."""
+        if not wav_b64:
+            return
+        self.push_message(label, {"type": "audio", "wav": wav_b64, "text": text, "urgency": urgency})
+
+    def broadcast_audio(self, wav_b64: str, text: str = "", urgency: str = "info") -> None:
+        for lbl in self.get_devices():
+            self.push_audio(lbl, wav_b64, text, urgency)
 
     def push_guidance(self, label: str, action: str, text: str = "") -> None:
         self.push_message(label, {"type": "guide", "action": action or "idle", "text": text or ""})

@@ -151,17 +151,10 @@ def main():
         logger.error(f"Pipeline start failed: {e}")
         sys.exit(1)
 
-    if speech is not None:
-        backend = getattr(speech, "backend_name", "?")
-        logger.info(f"Voice backend in use: {backend}")
-        if calib.is_calibrated:
-            speech.say(f"{config.system_name} ready. Calibration loaded. "
-                       "Say what do you see, or status, for a report.")
-        else:
-            speech.say(f"No calibration found. Say calibrate to improve accuracy. "
-                       f"{config.system_name} is now ready.")
+    if calib.is_calibrated:
+        pipeline._say(f"{config.system_name} ready.")
     else:
-        logger.warning("Speech engine disabled — no voice output")
+        pipeline._say(f"{config.system_name} ready.")
 
     if config.phone_mode:
         cam_url = pipeline.phone_camera_url
