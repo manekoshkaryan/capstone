@@ -23,29 +23,26 @@ struct ARCameraView: UIViewRepresentable {
 // MARK: - Main view
 
 struct ContentView: View {
-    private let serverHost = "192.168.11.105"
+    private let serverHost = "10.105.1.137"
     private let serverPort = 8444
 
     @StateObject private var coordinator = AppCoordinator()
 
     var body: some View {
         ZStack {
-            // Full-screen camera feed
-            if let session = coordinator.arSession {
-                ARCameraView(session: session)
-                    .ignoresSafeArea()
-            } else {
-                Color.black.ignoresSafeArea()
-            }
-
-            // Detection overlay from server
-            if let img = coordinator.annotatedFrame {
+            // When server sends annotated frames, show them full-opacity (avoids ghost/double-image)
+            // Otherwise fall back to live ARKit feed
+            if let img = coordinator.annotatedFrame, coordinator.serverConnected {
                 Image(uiImage: img)
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
-                    .opacity(0.55)
                     .allowsHitTesting(false)
+            } else if let session = coordinator.arSession {
+                ARCameraView(session: session)
+                    .ignoresSafeArea()
+            } else {
+                Color.black.ignoresSafeArea()
             }
 
             // Subtle dark gradient at top and bottom for controls
