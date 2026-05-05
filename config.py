@@ -138,9 +138,6 @@ class AppConfig:
     detector_imgsz: int = 640
     detection_interval_frames: int = 1
 
-    depth_model_id: str = "depth-anything/Depth-Anything-V2-Metric-Indoor-Small-hf"
-    depth_model_id_fallback: str = "depth-anything/Depth-Anything-V2-Metric-Outdoor-Small-hf"
-    depth_input_size: int = 518
     depth_interval_frames: int = 2
     depth_max_range_m: float = 20.0
 

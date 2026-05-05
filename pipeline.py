@@ -12,7 +12,7 @@ load_dotenv()
 
 from config import AppConfig
 from perception.detector import ObjectDetector
-from perception.depth_estimator import DepthEstimator, LiDARDepthSource
+from perception.depth_estimator import LiDARDepthSource
 from interfaces.lidar_depth_server import LiDARDepthServer
 from perception.tracker import MultiObjectTracker, TrackedObject, RawDetection
 from perception.calibration import CalibrationData
@@ -247,7 +247,6 @@ class Pipeline:
         )
 
         self._detector = ObjectDetector(config)
-        self._depth_estimator = DepthEstimator(config)
         self._lidar_server = LiDARDepthServer(port=8444)
         self._lidar_source = LiDARDepthSource(self._lidar_server)
         self._tracker = MultiObjectTracker(
@@ -382,7 +381,6 @@ class Pipeline:
         self._lidar_server.start()
         logger.info("LiDAR depth server started on ws://0.0.0.0:8444/depth")
         self._detector.load()
-        self._depth_estimator.load()
 
         src = (self._config.camera_source or "webcam").strip().lower()
         if src in ("phone", "webrtc", "xiaomi", "iphone"):
@@ -631,20 +629,13 @@ class Pipeline:
             last_depth_frame_id = frame_id
             t0 = time.perf_counter()
 
-            # Try LiDAR first (iOS app) — zero Mac compute, ±1-2cm accuracy
             depth_map = self._lidar_source.get(frame)
             if depth_map is not None:
                 if not _lidar_active_logged:
-                    logger.info("LiDAR depth active — Depth-Anything bypassed")
+                    logger.info("LiDAR depth active")
                     _lidar_active_logged = True
             else:
                 _lidar_active_logged = False
-                if self._depth_estimator.is_loaded:
-                    try:
-                        depth_map = self._depth_estimator.estimate(frame)
-                    except Exception as e:
-                        logger.warning(f"Depth exception: {e}")
-                        depth_map = None
 
             latency_ms = (time.perf_counter() - t0) * 1000.0
             self._state.set_depth(depth_map, frame_id, latency_ms)
@@ -1779,8 +1770,7 @@ class Pipeline:
         snap["fps"] = self._fps_counter.fps()
         snap["device"] = self._config.device.upper()
         snap["det_model"] = "OIV7-600" if "oiv7" in self._config.detector_model else "YOLO-World"
-        active = getattr(self._depth_estimator, "_active_model_id", self._config.depth_model_id)
-        snap["dep_model"] = "DAV2-Indoor" if "Indoor" in active else "DAV2-Outdoor"
+        snap["dep_model"] = "LiDAR"
         snap["vocab_n"] = len(self._detector.vocabulary)
         snap["n_objects"] = len([o for o in snap["tracked_objects"] if o.is_stable])
         snap["is_calibrated"] = self._calib.is_calibrated
