@@ -158,7 +158,7 @@ class AppConfig:
 
     ema_alpha_distance: float = 0.25
     ema_alpha_position: float = 0.4
-    depth_roi_trim_low: float = 10.0
+    depth_roi_trim_low: float = 35.0
     depth_roi_trim_high: float = 90.0
     depth_min_valid_pixels: int = 20
     depth_variance_high_threshold: float = 0.8

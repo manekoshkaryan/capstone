@@ -13,3 +13,24 @@ ts,protocol,source,device,message,word_count,action_category,actual_latency_ms,c
 1777898080.229,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,13.87,2213.87,99.37,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
 1777898083.298,adaptive,guide,iphone,Stop. Obstacle ahead.,3,stop,20.07,2220.07,99.1,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
 1777898086.0,adaptive,det,iphone,"Woman left, 2.1 meters.",4,info,20.76,2220.76,99.07,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777902798.814,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,32.96,2232.96,98.52,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777902800.433,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,15.49,2215.49,99.3,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777902804.352,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,6.89,2206.89,99.69,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777902989.869,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,20.28,2220.28,99.09,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777902993.53,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,27.35,2227.35,98.77,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903052.558,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,43.36,2243.36,98.07,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903061.861,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,19.76,2219.76,99.11,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903065.356,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,14.07,2214.07,99.36,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903079.993,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,739.48,2939.48,74.84,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903083.398,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,23.22,2223.22,98.96,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903094.825,adaptive,det,iphone,"Person ahead, 2.2 meters.",4,info,11.04,2211.04,99.5,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903495.009,adaptive,det,iphone,"Obstacle on your left, move right.",6,directional,31.12,2231.12,98.61,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903518.175,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,31.17,2231.17,98.6,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903540.912,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,23.96,2223.96,98.92,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903543.9,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,9.4,2209.4,99.57,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903546.908,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,20.33,2220.33,99.08,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903550.991,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,35.91,2235.91,98.39,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903617.741,adaptive,det,iphone,"Obstacle on your left, move right.",6,directional,21.48,2221.48,99.03,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903645.348,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,20.23,2220.23,99.09,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903648.619,adaptive,det,iphone,"Obstacle ahead, move right.",4,directional,13.59,2213.59,99.39,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS
+1777903650.208,adaptive,det,iphone,Stop. Obstacle ahead.,3,stop,21.71,2221.71,99.02,600.0,900.0,700.0,Direct Vision-to-Speech Protocol,Cascaded ASR-LLM-TTS

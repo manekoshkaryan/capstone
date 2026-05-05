@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		234D404EF59E7E8FFEA7ECFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397FB4A14E59190B08995A54 /* ContentView.swift */; };
-		25F7859CF544C88BAE3FC283 /* DepthWebSocketSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04672F104C231D271633D27 /* DepthWebSocketSender.swift */; };
-		901DE7D3692988E314C421E1 /* ARDepthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF0461C78064AF9D15E2D5D /* ARDepthManager.swift */; };
+		36C28F0E992DFF618C1CFAD0 /* ARStreamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00635325CC29F54CBC1CD39C /* ARStreamManager.swift */; };
+		458BC48D16A713604084C668 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319C3DB0CACCD49F9236751 /* ServerConnection.swift */; };
 		93771C0D7D56C055DEC84C6F /* ManeNavApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8082056E17686EFC057CB351 /* ManeNavApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00635325CC29F54CBC1CD39C /* ARStreamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARStreamManager.swift; sourceTree = "<group>"; };
 		0722A5FA317542B2A5DB1F56 /* ManeNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManeNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		397FB4A14E59190B08995A54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8082056E17686EFC057CB351 /* ManeNavApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManeNavApp.swift; sourceTree = "<group>"; };
-		A04672F104C231D271633D27 /* DepthWebSocketSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthWebSocketSender.swift; sourceTree = "<group>"; };
-		AFF0461C78064AF9D15E2D5D /* ARDepthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARDepthManager.swift; sourceTree = "<group>"; };
+		E319C3DB0CACCD49F9236751 /* ServerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -33,10 +33,10 @@
 		C760BDD4FFE53C2DFCF114BC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AFF0461C78064AF9D15E2D5D /* ARDepthManager.swift */,
+				00635325CC29F54CBC1CD39C /* ARStreamManager.swift */,
 				397FB4A14E59190B08995A54 /* ContentView.swift */,
-				A04672F104C231D271633D27 /* DepthWebSocketSender.swift */,
 				8082056E17686EFC057CB351 /* ManeNavApp.swift */,
+				E319C3DB0CACCD49F9236751 /* ServerConnection.swift */,
 			);
 			name = Sources;
 			path = ManeNav/Sources;
@@ -103,10 +103,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901DE7D3692988E314C421E1 /* ARDepthManager.swift in Sources */,
+				36C28F0E992DFF618C1CFAD0 /* ARStreamManager.swift in Sources */,
 				234D404EF59E7E8FFEA7ECFC /* ContentView.swift in Sources */,
-				25F7859CF544C88BAE3FC283 /* DepthWebSocketSender.swift in Sources */,
 				93771C0D7D56C055DEC84C6F /* ManeNavApp.swift in Sources */,
+				458BC48D16A713604084C668 /* ServerConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

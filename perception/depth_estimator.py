@@ -190,7 +190,7 @@ class LiDARDepthSource:
         self._server = server  # LiDARDepthServer instance
 
     def get(self, frame_bgr: np.ndarray, label: str = "iphone") -> Optional[np.ndarray]:
-        frame = self._server.latest(label)
+        frame = self._server.latest_depth(label)
         if frame is None:
             return None
         h, w = frame_bgr.shape[:2]

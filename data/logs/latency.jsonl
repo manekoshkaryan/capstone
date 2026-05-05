@@ -513,3 +513,957 @@
 {"kind": "announcement", "ts": 1777898086.0, "text": "Woman left, 2.1 meters.", "urgency": "info", "source": "det", "action": "", "queue_wait_ms": 13.07, "speak_dur_ms": 297.87, "reason": "new"}
 {"kind": "stt", "ts": 1777898086.809, "text": "", "engine": "google", "ok": false, "transcribe_ms": 613.59}
 {"kind": "announcement", "ts": 1777898086.527, "text": "Shutting down.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 5.1, "speak_dur_ms": 1362.22}
+{"kind": "announcement", "ts": 1777902456.008, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 15.02, "speak_dur_ms": 5751.65}
+{"kind": "stt", "ts": 1777902468.888, "text": "", "engine": "google", "ok": false, "transcribe_ms": 7128.93}
+{"kind": "stt", "ts": 1777902473.369, "text": "", "engine": "google", "ok": false, "transcribe_ms": 482.14}
+{"kind": "stt", "ts": 1777902476.497, "text": "", "engine": "google", "ok": false, "transcribe_ms": 582.41}
+{"kind": "stt", "ts": 1777902484.096, "text": "what is international September", "engine": "google", "ok": true, "transcribe_ms": 1875.35}
+{"kind": "stt", "ts": 1777902490.658, "text": "", "engine": "google", "ok": false, "transcribe_ms": 555.31}
+{"kind": "stt", "ts": 1777902495.373, "text": "how do you make kitchen", "engine": "google", "ok": true, "transcribe_ms": 953.39}
+{"kind": "stt", "ts": 1777902497.9, "text": "", "engine": "google", "ok": false, "transcribe_ms": 479.74}
+{"kind": "stt", "ts": 1777902506.819, "text": "", "engine": "google", "ok": false, "transcribe_ms": 860.39}
+{"kind": "stt", "ts": 1777902511.0, "text": "", "engine": "google", "ok": false, "transcribe_ms": 700.39}
+{"kind": "announcement", "ts": 1777902549.011, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 12.71, "speak_dur_ms": 5625.62}
+{"kind": "stt", "ts": 1777902556.256, "text": "", "engine": "google", "ok": false, "transcribe_ms": 904.85}
+{"kind": "stt", "ts": 1777902559.619, "text": "", "engine": "google", "ok": false, "transcribe_ms": 761.1}
+{"kind": "stt", "ts": 1777902566.531, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1308.68}
+{"kind": "stt", "ts": 1777902570.513, "text": "", "engine": "google", "ok": false, "transcribe_ms": 767.61}
+{"kind": "stt", "ts": 1777902574.41, "text": "Comerica", "engine": "google", "ok": true, "transcribe_ms": 846.08}
+{"kind": "stt", "ts": 1777902580.566, "text": "", "engine": "google", "ok": false, "transcribe_ms": 739.69}
+{"kind": "stt", "ts": 1777902585.875, "text": "", "engine": "google", "ok": false, "transcribe_ms": 677.89}
+{"kind": "stt", "ts": 1777902592.031, "text": "", "engine": "google", "ok": false, "transcribe_ms": 967.69}
+{"kind": "stt", "ts": 1777902598.013, "text": "", "engine": "google", "ok": false, "transcribe_ms": 649.68}
+{"kind": "stt", "ts": 1777902601.611, "text": "", "engine": "google", "ok": false, "transcribe_ms": 590.66}
+{"kind": "stt", "ts": 1777902607.064, "text": "", "engine": "google", "ok": false, "transcribe_ms": 887.03}
+{"kind": "stt", "ts": 1777902612.308, "text": "", "engine": "google", "ok": false, "transcribe_ms": 676.38}
+{"kind": "stt", "ts": 1777902614.407, "text": "tell", "engine": "google", "ok": true, "transcribe_ms": 495.31}
+{"kind": "stt", "ts": 1777902617.422, "text": "", "engine": "google", "ok": false, "transcribe_ms": 598.79}
+{"kind": "stt", "ts": 1777902623.501, "text": "", "engine": "google", "ok": false, "transcribe_ms": 806.16}
+{"kind": "stt", "ts": 1777902626.46, "text": "", "engine": "google", "ok": false, "transcribe_ms": 738.42}
+{"kind": "stt", "ts": 1777902630.341, "text": "", "engine": "google", "ok": false, "transcribe_ms": 554.98}
+{"kind": "stt", "ts": 1777902633.604, "text": "", "engine": "google", "ok": false, "transcribe_ms": 699.51}
+{"kind": "stt", "ts": 1777902637.034, "text": "", "engine": "google", "ok": false, "transcribe_ms": 714.79}
+{"kind": "stt", "ts": 1777902639.678, "text": "", "engine": "google", "ok": false, "transcribe_ms": 485.04}
+{"kind": "stt", "ts": 1777902642.216, "text": "", "engine": "google", "ok": false, "transcribe_ms": 639.81}
+{"kind": "stt", "ts": 1777902645.463, "text": "", "engine": "google", "ok": false, "transcribe_ms": 723.74}
+{"kind": "stt", "ts": 1777902648.652, "text": "", "engine": "google", "ok": false, "transcribe_ms": 587.14}
+{"kind": "stt", "ts": 1777902651.11, "text": "", "engine": "google", "ok": false, "transcribe_ms": 643.33}
+{"kind": "stt", "ts": 1777902656.951, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1044.25}
+{"kind": "stt", "ts": 1777902670.745, "text": "", "engine": "google", "ok": false, "transcribe_ms": 418.3}
+{"kind": "stt", "ts": 1777902676.306, "text": "", "engine": "google", "ok": false, "transcribe_ms": 905.26}
+{"kind": "stt", "ts": 1777902684.887, "text": "", "engine": "google", "ok": false, "transcribe_ms": 528.99}
+{"kind": "stt", "ts": 1777902687.902, "text": "", "engine": "google", "ok": false, "transcribe_ms": 509.93}
+{"kind": "stt", "ts": 1777902690.854, "text": "", "engine": "google", "ok": false, "transcribe_ms": 560.19}
+{"kind": "stt", "ts": 1777902699.56, "text": "", "engine": "google", "ok": false, "transcribe_ms": 892.15}
+{"kind": "stt", "ts": 1777902703.851, "text": "", "engine": "google", "ok": false, "transcribe_ms": 955.14}
+{"kind": "stt", "ts": 1777902709.568, "text": "", "engine": "google", "ok": false, "transcribe_ms": 656.69}
+{"kind": "stt", "ts": 1777902712.362, "text": "", "engine": "google", "ok": false, "transcribe_ms": 549.07}
+{"kind": "stt", "ts": 1777902715.182, "text": "", "engine": "google", "ok": false, "transcribe_ms": 494.39}
+{"kind": "stt", "ts": 1777902719.276, "text": "", "engine": "google", "ok": false, "transcribe_ms": 637.38}
+{"kind": "stt", "ts": 1777902725.031, "text": "no thank you", "engine": "google", "ok": true, "transcribe_ms": 816.74}
+{"kind": "announcement", "ts": 1777902725.062, "text": "You are welcome.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 29.92, "speak_dur_ms": 1382.17}
+{"kind": "stt", "ts": 1777902728.002, "text": "you are welcome", "engine": "google", "ok": true, "transcribe_ms": 1000.13}
+{"kind": "announcement", "ts": 1777902754.409, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 8.51, "speak_dur_ms": 3755.92}
+{"kind": "stt", "ts": 1777902758.798, "text": "", "engine": "google", "ok": false, "transcribe_ms": 668.88}
+{"kind": "stt", "ts": 1777902763.989, "text": "", "engine": "google", "ok": false, "transcribe_ms": 675.82}
+{"kind": "stt", "ts": 1777902769.477, "text": "Ernesto Manchester navigate", "engine": "google", "ok": true, "transcribe_ms": 882.7}
+{"kind": "stt", "ts": 1777902780.378, "text": "navigate to Granada navigate me to", "engine": "google", "ok": true, "transcribe_ms": 3273.33}
+{"kind": "stt", "ts": 1777902785.345, "text": "guide me to nocca shopping list", "engine": "google", "ok": true, "transcribe_ms": 1580.4}
+{"kind": "announcement", "ts": 1777902785.064, "text": "I see Bookcase to your left, very close; Bookcase to your left, very close; Book to your left, very close; Book to your left, under one meter; Person to your left, two meters; Person to your left, two meters.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 7.53, "speak_dur_ms": 13749.27}
+{"kind": "announcement", "ts": 1777902798.814, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 24.78, "speak_dur_ms": 1392.17, "reason": "new", "hazard_ts": 1777902798.789, "hazard_to_audio_ms": 24.83, "hazard_to_enqueue_ms": 0.05}
+{"kind": "announcement", "ts": 1777902800.433, "text": "Obstacle ahead, move right.", "urgency": "warn", "source": "det", "action": "", "queue_wait_ms": 8.12, "speak_dur_ms": 2170.03, "reason": "interval"}
+{"kind": "announcement", "ts": 1777902804.352, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 0.78, "speak_dur_ms": 1361.06, "reason": "interval", "is_repeat": true}
+{"kind": "stt", "ts": 1777902809.298, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1810.99}
+{"kind": "stt", "ts": 1777902812.165, "text": "", "engine": "google", "ok": false, "transcribe_ms": 928.49}
+{"kind": "stt", "ts": 1777902817.321, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1914.44}
+{"kind": "announcement", "ts": 1777902818.139, "text": "I see Man to your left, very close; Human face to your left, one and a half meters.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 33.82, "speak_dur_ms": 1995.65}
+{"kind": "stt", "ts": 1777902820.822, "text": "", "engine": "google", "ok": false, "transcribe_ms": 763.78}
+{"kind": "announcement", "ts": 1777902824.57, "text": "Shutting down.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 15.34, "speak_dur_ms": 1301.13}
+{"kind": "stt", "ts": 1777902828.063, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1890.02}
+{"kind": "announcement", "ts": 1777902955.261, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 13.71, "speak_dur_ms": 2092.84}
+{"kind": "stt", "ts": 1777902957.938, "text": "", "engine": "google", "ok": false, "transcribe_ms": 619.18}
+{"kind": "stt", "ts": 1777902962.096, "text": "send me a picture", "engine": "google", "ok": true, "transcribe_ms": 898.32}
+{"kind": "stt", "ts": 1777902964.509, "text": "play no rain today", "engine": "google", "ok": true, "transcribe_ms": 651.34}
+{"kind": "stt", "ts": 1777902969.102, "text": "what", "engine": "google", "ok": true, "transcribe_ms": 670.01}
+{"kind": "announcement", "ts": 1777902974.643, "text": "I see Laptop to your left, very close; Person to your left, one meter; Person to your left, one meter; Person to your left, two meters; Person to your left, two meters; Person to your left, two meters.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 3.28, "speak_dur_ms": 168.71}
+{"kind": "stt", "ts": 1777902975.697, "text": "make a note please", "engine": "google", "ok": true, "transcribe_ms": 945.17}
+{"kind": "stt", "ts": 1777902980.174, "text": "", "engine": "google", "ok": false, "transcribe_ms": 770.01}
+{"kind": "stt", "ts": 1777902983.531, "text": "", "engine": "google", "ok": false, "transcribe_ms": 588.26}
+{"kind": "stt", "ts": 1777902989.335, "text": "", "engine": "google", "ok": false, "transcribe_ms": 639.61}
+{"kind": "announcement", "ts": 1777902989.869, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 14.62, "speak_dur_ms": 1427.41, "reason": "new", "hazard_ts": 1777902989.854, "hazard_to_audio_ms": 14.69, "hazard_to_enqueue_ms": 0.07}
+{"kind": "stt", "ts": 1777902992.692, "text": "", "engine": "google", "ok": false, "transcribe_ms": 677.33}
+{"kind": "announcement", "ts": 1777902993.53, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "", "queue_wait_ms": 25.28, "speak_dur_ms": 1434.52, "reason": "interval", "is_repeat": true}
+{"kind": "stt", "ts": 1777902996.542, "text": "", "engine": "google", "ok": false, "transcribe_ms": 861.58}
+{"kind": "stt", "ts": 1777903003.461, "text": "", "engine": "google", "ok": false, "transcribe_ms": 986.22}
+{"kind": "stt", "ts": 1777903008.255, "text": "", "engine": "google", "ok": false, "transcribe_ms": 680.27}
+{"kind": "stt", "ts": 1777903010.813, "text": "", "engine": "google", "ok": false, "transcribe_ms": 533.46}
+{"kind": "announcement", "ts": 1777903012.915, "text": "I see Man to your left, very close; Man to your left, very close; Human face to your left, one and a half meters.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 18.76, "speak_dur_ms": 3253.62}
+{"kind": "stt", "ts": 1777903017.087, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1005.33}
+{"kind": "stt", "ts": 1777903022.333, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1299.14}
+{"kind": "stt", "ts": 1777903025.012, "text": "", "engine": "google", "ok": false, "transcribe_ms": 617.19}
+{"kind": "stt", "ts": 1777903029.977, "text": "", "engine": "google", "ok": false, "transcribe_ms": 538.05}
+{"kind": "stt", "ts": 1777903034.76, "text": "Chicago Heights", "engine": "google", "ok": true, "transcribe_ms": 942.08}
+{"kind": "stt", "ts": 1777903038.064, "text": "", "engine": "google", "ok": false, "transcribe_ms": 815.47}
+{"kind": "stt", "ts": 1777903040.68, "text": "", "engine": "google", "ok": false, "transcribe_ms": 528.18}
+{"kind": "stt", "ts": 1777903043.551, "text": "", "engine": "google", "ok": false, "transcribe_ms": 468.45}
+{"kind": "announcement", "ts": 1777903043.977, "text": "Continuous guidance on.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 34.64, "speak_dur_ms": 1937.12}
+{"kind": "stt", "ts": 1777903046.572, "text": "", "engine": "google", "ok": false, "transcribe_ms": 607.47}
+{"kind": "stt", "ts": 1777903052.997, "text": "", "engine": "google", "ok": false, "transcribe_ms": 752.37}
+{"kind": "announcement", "ts": 1777903052.558, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 31.14, "speak_dur_ms": 1458.83, "reason": "new", "hazard_ts": 1777903052.526, "hazard_to_audio_ms": 31.22, "hazard_to_enqueue_ms": 0.08}
+{"kind": "stt", "ts": 1777903061.952, "text": "", "engine": "google", "ok": false, "transcribe_ms": 901.04}
+{"kind": "announcement", "ts": 1777903061.861, "text": "Obstacle ahead, move right.", "urgency": "warn", "source": "det", "action": "", "queue_wait_ms": 10.24, "speak_dur_ms": 2240.53, "reason": "new"}
+{"kind": "stt", "ts": 1777903065.472, "text": "", "engine": "google", "ok": false, "transcribe_ms": 541.42}
+{"kind": "announcement", "ts": 1777903065.356, "text": "Obstacle ahead, move right.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 4.94, "speak_dur_ms": 1517.73, "reason": "interval", "is_repeat": true}
+{"kind": "stt", "ts": 1777903070.178, "text": "Avalanche", "engine": "google", "ok": true, "transcribe_ms": 830.23}
+{"kind": "stt", "ts": 1777903073.473, "text": "prostate navigation", "engine": "google", "ok": true, "transcribe_ms": 844.39}
+{"kind": "stt", "ts": 1777903078.008, "text": "guide me", "engine": "google", "ok": true, "transcribe_ms": 806.25}
+{"kind": "announcement", "ts": 1777903078.037, "text": "Continuous guidance on.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 24.33, "speak_dur_ms": 1956.28}
+{"kind": "announcement", "ts": 1777903079.993, "text": "Obstacle ahead, move right.", "urgency": "warn", "source": "det", "action": "", "queue_wait_ms": 730.29, "speak_dur_ms": 2260.72, "reason": "new"}
+{"kind": "stt", "ts": 1777903084.474, "text": "", "engine": "google", "ok": false, "transcribe_ms": 998.7}
+{"kind": "announcement", "ts": 1777903083.398, "text": "Obstacle ahead, move right.", "urgency": "warn", "source": "det", "action": "", "queue_wait_ms": 17.04, "speak_dur_ms": 2191.99, "reason": "interval"}
+{"kind": "stt", "ts": 1777903091.889, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1082.07}
+{"kind": "announcement", "ts": 1777903094.825, "text": "Person ahead, 2.2 meters.", "urgency": "info", "source": "det", "action": "", "queue_wait_ms": 1.37, "speak_dur_ms": 2643.81, "reason": "interval"}
+{"kind": "stt", "ts": 1777903098.574, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1159.51}
+{"kind": "stt", "ts": 1777903105.17, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1326.43}
+{"kind": "announcement", "ts": 1777903109.907, "text": "Shutting down.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 24.37, "speak_dur_ms": 901.32}
+{"kind": "stt", "ts": 1777903111.568, "text": "", "engine": "google", "ok": false, "transcribe_ms": 822.65}
+{"kind": "announcement", "ts": 1777903481.272, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 16.1, "speak_dur_ms": 5636.97}
+{"kind": "stt", "ts": 1777903488.436, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1217.92}
+{"kind": "stt", "ts": 1777903494.729, "text": "", "engine": "google", "ok": false, "transcribe_ms": 902.74}
+{"kind": "announcement", "ts": 1777903495.009, "text": "Obstacle on your left, move right.", "urgency": "critical", "source": "det", "action": "MOVE_RIGHT", "queue_wait_ms": 20.8, "speak_dur_ms": 1752.81, "reason": "new", "hazard_ts": 1777903494.988, "hazard_to_audio_ms": 20.87, "hazard_to_enqueue_ms": 0.07}
+{"kind": "stt", "ts": 1777903500.81, "text": "", "engine": "google", "ok": false, "transcribe_ms": 820.0}
+{"kind": "stt", "ts": 1777903506.149, "text": "", "engine": "google", "ok": false, "transcribe_ms": 734.21}
+{"kind": "stt", "ts": 1777903512.722, "text": "guide me", "engine": "google", "ok": true, "transcribe_ms": 1308.28}
+{"kind": "announcement", "ts": 1777903512.753, "text": "Continuous guidance on.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 23.59, "speak_dur_ms": 1973.75}
+{"kind": "stt", "ts": 1777903519.005, "text": "", "engine": "google", "ok": false, "transcribe_ms": 974.2}
+{"kind": "announcement", "ts": 1777903518.175, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "MOVE_RIGHT", "queue_wait_ms": 30.14, "speak_dur_ms": 1454.08, "reason": "new", "hazard_ts": 1777903518.145, "hazard_to_audio_ms": 30.22, "hazard_to_enqueue_ms": 0.08}
+{"kind": "stt", "ts": 1777903526.784, "text": "", "engine": "google", "ok": false, "transcribe_ms": 831.87}
+{"kind": "stt", "ts": 1777903533.133, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1086.81}
+{"kind": "stt", "ts": 1777903535.884, "text": "", "engine": "google", "ok": false, "transcribe_ms": 650.84}
+{"kind": "announcement", "ts": 1777903540.912, "text": "Obstacle ahead, move right.", "urgency": "warn", "source": "det", "action": "", "queue_wait_ms": 16.25, "speak_dur_ms": 490.08, "reason": "new"}
+{"kind": "stt", "ts": 1777903542.443, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1080.5}
+{"kind": "announcement", "ts": 1777903543.9, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 3.85, "speak_dur_ms": 1393.19, "reason": "new", "hazard_ts": 1777903543.896, "hazard_to_audio_ms": 3.9, "hazard_to_enqueue_ms": 0.04}
+{"kind": "announcement", "ts": 1777903546.908, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "", "queue_wait_ms": 10.25, "speak_dur_ms": 892.78, "reason": "interval", "is_repeat": true}
+{"kind": "stt", "ts": 1777903548.97, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1242.5}
+{"kind": "announcement", "ts": 1777903550.991, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "", "queue_wait_ms": 27.52, "speak_dur_ms": 1475.39, "reason": "interval", "is_repeat": true}
+{"kind": "stt", "ts": 1777903556.375, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1718.99}
+{"kind": "stt", "ts": 1777903563.083, "text": "", "engine": "google", "ok": false, "transcribe_ms": 903.84}
+{"kind": "announcement", "ts": 1777903564.488, "text": "Shutting down.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 18.69, "speak_dur_ms": 1304.77}
+{"kind": "stt", "ts": 1777903569.304, "text": "", "engine": "google", "ok": false, "transcribe_ms": 868.44}
+{"kind": "announcement", "ts": 1777903611.886, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 31.79, "speak_dur_ms": 2178.77}
+{"kind": "stt", "ts": 1777903614.654, "text": "", "engine": "google", "ok": false, "transcribe_ms": 624.81}
+{"kind": "stt", "ts": 1777903617.604, "text": "", "engine": "google", "ok": false, "transcribe_ms": 498.83}
+{"kind": "announcement", "ts": 1777903617.741, "text": "Obstacle on your left, move right.", "urgency": "critical", "source": "det", "action": "MOVE_RIGHT", "queue_wait_ms": 8.22, "speak_dur_ms": 1712.8, "reason": "new", "hazard_ts": 1777903617.733, "hazard_to_audio_ms": 8.27, "hazard_to_enqueue_ms": 0.05}
+{"kind": "stt", "ts": 1777903624.257, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1095.75}
+{"kind": "stt", "ts": 1777903627.002, "text": "", "engine": "google", "ok": false, "transcribe_ms": 469.99}
+{"kind": "stt", "ts": 1777903637.125, "text": "", "engine": "google", "ok": false, "transcribe_ms": 575.87}
+{"kind": "stt", "ts": 1777903639.318, "text": "", "engine": "google", "ok": false, "transcribe_ms": 532.73}
+{"kind": "stt", "ts": 1777903642.953, "text": "", "engine": "google", "ok": false, "transcribe_ms": 506.54}
+{"kind": "announcement", "ts": 1777903645.348, "text": "Obstacle ahead, move right.", "urgency": "warn", "source": "det", "action": "", "queue_wait_ms": 12.32, "speak_dur_ms": 2279.92, "reason": "new"}
+{"kind": "announcement", "ts": 1777903648.619, "text": "Obstacle ahead, move right.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 8.09, "speak_dur_ms": 1538.61, "reason": "new", "hazard_ts": 1777903648.611, "hazard_to_audio_ms": 8.17, "hazard_to_enqueue_ms": 0.08}
+{"kind": "stt", "ts": 1777903651.02, "text": "", "engine": "google", "ok": false, "transcribe_ms": 937.9}
+{"kind": "announcement", "ts": 1777903650.208, "text": "Stop. Obstacle ahead.", "urgency": "critical", "source": "det", "action": "STOP", "queue_wait_ms": 15.89, "speak_dur_ms": 1503.66, "reason": "interval", "is_repeat": true}
+{"kind": "announcement", "ts": 1777903651.952, "text": "Shutting down.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 15.72, "speak_dur_ms": 1277.96}
+{"kind": "announcement", "ts": 1777903719.291, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 4.36, "speak_dur_ms": 2294.22}
+{"kind": "stt", "ts": 1777903722.316, "text": "", "engine": "google", "ok": false, "transcribe_ms": 762.09}
+{"kind": "stt", "ts": 1777903727.552, "text": "", "engine": "google", "ok": false, "transcribe_ms": 492.6}
+{"kind": "stt", "ts": 1777903730.698, "text": "", "engine": "google", "ok": false, "transcribe_ms": 699.68}
+{"kind": "stt", "ts": 1777903733.854, "text": "", "engine": "google", "ok": false, "transcribe_ms": 549.57}
+{"kind": "announcement", "ts": 1777903872.91, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 23.12, "speak_dur_ms": 2910.15}
+{"kind": "stt", "ts": 1777903877.616, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1871.98}
+{"kind": "stt", "ts": 1777903884.47, "text": "", "engine": "google", "ok": false, "transcribe_ms": 980.29}
+{"kind": "stt", "ts": 1777903886.682, "text": "wake me", "engine": "google", "ok": true, "transcribe_ms": 596.67}
+{"kind": "stt", "ts": 1777903892.695, "text": "", "engine": "google", "ok": false, "transcribe_ms": 729.33}
+{"kind": "announcement", "ts": 1777903892.441, "text": "Continuous guidance on.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 0.68, "speak_dur_ms": 1917.46}
+{"kind": "stt", "ts": 1777903898.549, "text": "", "engine": "google", "ok": false, "transcribe_ms": 686.05}
+{"kind": "announcement", "ts": 1777903897.966, "text": "Heading reset.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 17.04, "speak_dur_ms": 1281.76}
+{"kind": "stt", "ts": 1777903905.331, "text": "", "engine": "google", "ok": false, "transcribe_ms": 728.44}
+{"kind": "stt", "ts": 1777903912.73, "text": "", "engine": "google", "ok": false, "transcribe_ms": 806.7}
+{"kind": "stt", "ts": 1777903915.662, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 720.33}
+{"kind": "stt", "ts": 1777903918.457, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 531.69}
+{"kind": "stt", "ts": 1777903921.578, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 548.12}
+{"kind": "stt", "ts": 1777903924.848, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 884.75}
+{"kind": "stt", "ts": 1777903927.305, "text": "", "engine": "google", "ok": false, "transcribe_ms": 630.2}
+{"kind": "stt", "ts": 1777903932.92, "text": "", "engine": "google", "ok": false, "transcribe_ms": 649.09}
+{"kind": "stt", "ts": 1777903936.07, "text": "", "engine": "google", "ok": false, "transcribe_ms": 747.77}
+{"kind": "announcement", "ts": 1777904358.507, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 21.61, "speak_dur_ms": 4134.86}
+{"kind": "stt", "ts": 1777904363.866, "text": "happy birthday", "engine": "google", "ok": true, "transcribe_ms": 1259.74}
+{"kind": "announcement", "ts": 1777904368.44, "text": "I see Bookcase to your left, very close; Book to your left, under one meter; Book to your left, under one meter; Book to your left, under one meter; Book to your left, under one meter; Book to your left, under one meter.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 1.4, "speak_dur_ms": 1556.55}
+{"kind": "stt", "ts": 1777904370.914, "text": "", "engine": "google", "ok": false, "transcribe_ms": 952.12}
+{"kind": "stt", "ts": 1777904375.566, "text": "", "engine": "google", "ok": false, "transcribe_ms": 796.2}
+{"kind": "stt", "ts": 1777904379.952, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 700.27}
+{"kind": "stt", "ts": 1777904382.862, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 546.92}
+{"kind": "stt", "ts": 1777904387.282, "text": "", "engine": "google", "ok": false, "transcribe_ms": 768.38}
+{"kind": "announcement", "ts": 1777904387.372, "text": "Volume 100 percent.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 11.58, "speak_dur_ms": 2002.54}
+{"kind": "stt", "ts": 1777904390.742, "text": "volume 100%", "engine": "google", "ok": true, "transcribe_ms": 664.06}
+{"kind": "stt", "ts": 1777904395.179, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 688.91}
+{"kind": "stt", "ts": 1777904398.419, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 961.51}
+{"kind": "stt", "ts": 1777904401.485, "text": "", "engine": "google", "ok": false, "transcribe_ms": 626.4}
+{"kind": "stt", "ts": 1777904405.397, "text": "", "engine": "google", "ok": false, "transcribe_ms": 565.92}
+{"kind": "stt", "ts": 1777904411.466, "text": "", "engine": "google", "ok": false, "transcribe_ms": 801.43}
+{"kind": "stt", "ts": 1777904414.559, "text": "PC feel", "engine": "google", "ok": true, "transcribe_ms": 725.66}
+{"kind": "stt", "ts": 1777904421.894, "text": "connect to", "engine": "google", "ok": true, "transcribe_ms": 1098.83}
+{"kind": "stt", "ts": 1777904432.127, "text": "", "engine": "google", "ok": false, "transcribe_ms": 974.25}
+{"kind": "stt", "ts": 1777904438.272, "text": "", "engine": "google", "ok": false, "transcribe_ms": 879.77}
+{"kind": "stt", "ts": 1777904445.234, "text": "Jerry Duncan restaurant in Phoenix", "engine": "google", "ok": true, "transcribe_ms": 1588.53}
+{"kind": "stt", "ts": 1777904451.57, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1066.6}
+{"kind": "announcement", "ts": 1777904762.223, "text": "No calibration found. Say calibrate to improve accuracy. ManeNavSystem is now ready.", "urgency": "info", "source": null, "action": null, "queue_wait_ms": 32.38, "speak_dur_ms": 4270.57}
+{"kind": "stt", "ts": 1777904767.725, "text": "how do you say celebration", "engine": "google", "ok": true, "transcribe_ms": 1272.45}
+{"kind": "stt", "ts": 1777904773.796, "text": "", "engine": "google", "ok": false, "transcribe_ms": 828.4}
+{"kind": "stt", "ts": 1777904780.073, "text": "", "engine": "google", "ok": false, "transcribe_ms": 937.82}
+{"kind": "stt", "ts": 1777904786.394, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1056.79}
+{"kind": "stt", "ts": 1777904791.947, "text": "", "engine": "google", "ok": false, "transcribe_ms": 710.85}
+{"kind": "stt", "ts": 1777904795.594, "text": "", "engine": "google", "ok": false, "transcribe_ms": 812.53}
+{"kind": "stt", "ts": 1777904803.407, "text": "", "engine": "google", "ok": false, "transcribe_ms": 948.71}
+{"kind": "stt", "ts": 1777904809.975, "text": "", "engine": "google", "ok": false, "transcribe_ms": 878.81}
+{"kind": "stt", "ts": 1777904815.033, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 779.45}
+{"kind": "stt", "ts": 1777904822.835, "text": "what", "engine": "google", "ok": true, "transcribe_ms": 629.96}
+{"kind": "stt", "ts": 1777904825.371, "text": "", "engine": "google", "ok": false, "transcribe_ms": 653.94}
+{"kind": "stt", "ts": 1777904993.193, "text": "", "engine": "google", "ok": false, "transcribe_ms": 916.53}
+{"kind": "stt", "ts": 1777904995.467, "text": "", "engine": "google", "ok": false, "transcribe_ms": 485.24}
+{"kind": "stt", "ts": 1777904997.916, "text": "", "engine": "google", "ok": false, "transcribe_ms": 471.18}
+{"kind": "stt", "ts": 1777905002.596, "text": "", "engine": "google", "ok": false, "transcribe_ms": 849.24}
+{"kind": "stt", "ts": 1777905010.052, "text": "", "engine": "google", "ok": false, "transcribe_ms": 601.9}
+{"kind": "stt", "ts": 1777905016.277, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1006.13}
+{"kind": "stt", "ts": 1777905019.451, "text": "what do you", "engine": "google", "ok": true, "transcribe_ms": 599.61}
+{"kind": "stt", "ts": 1777905024.142, "text": "what's on my list", "engine": "google", "ok": true, "transcribe_ms": 1086.02}
+{"kind": "stt", "ts": 1777905027.541, "text": "what do", "engine": "google", "ok": true, "transcribe_ms": 574.65}
+{"kind": "stt", "ts": 1777905030.894, "text": "", "engine": "google", "ok": false, "transcribe_ms": 538.77}
+{"kind": "stt", "ts": 1777905034.124, "text": "", "engine": "google", "ok": false, "transcribe_ms": 627.92}
+{"kind": "stt", "ts": 1777905036.508, "text": "talk to you", "engine": "google", "ok": true, "transcribe_ms": 597.2}
+{"kind": "stt", "ts": 1777905044.484, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1116.15}
+{"kind": "stt", "ts": 1777905050.438, "text": "", "engine": "google", "ok": false, "transcribe_ms": 772.65}
+{"kind": "stt", "ts": 1777905061.383, "text": "", "engine": "google", "ok": false, "transcribe_ms": 671.15}
+{"kind": "stt", "ts": 1777905063.897, "text": "", "engine": "google", "ok": false, "transcribe_ms": 718.52}
+{"kind": "stt", "ts": 1777905068.076, "text": "", "engine": "google", "ok": false, "transcribe_ms": 855.19}
+{"kind": "stt", "ts": 1777905074.373, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1326.55}
+{"kind": "stt", "ts": 1777905081.034, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1142.92}
+{"kind": "stt", "ts": 1777905087.675, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1183.03}
+{"kind": "stt", "ts": 1777905092.346, "text": "", "engine": "google", "ok": false, "transcribe_ms": 662.3}
+{"kind": "stt", "ts": 1777905097.18, "text": "", "engine": "google", "ok": false, "transcribe_ms": 530.37}
+{"kind": "stt", "ts": 1777905100.14, "text": "", "engine": "google", "ok": false, "transcribe_ms": 623.2}
+{"kind": "stt", "ts": 1777905105.062, "text": "", "engine": "google", "ok": false, "transcribe_ms": 654.29}
+{"kind": "stt", "ts": 1777905108.891, "text": "", "engine": "google", "ok": false, "transcribe_ms": 586.6}
+{"kind": "stt", "ts": 1777905118.607, "text": "", "engine": "google", "ok": false, "transcribe_ms": 867.2}
+{"kind": "stt", "ts": 1777905123.066, "text": "", "engine": "google", "ok": false, "transcribe_ms": 613.78}
+{"kind": "stt", "ts": 1777905131.649, "text": "", "engine": "google", "ok": false, "transcribe_ms": 892.0}
+{"kind": "stt", "ts": 1777905136.328, "text": "", "engine": "google", "ok": false, "transcribe_ms": 688.63}
+{"kind": "stt", "ts": 1777905142.789, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1094.0}
+{"kind": "stt", "ts": 1777905146.081, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1045.94}
+{"kind": "stt", "ts": 1777905150.716, "text": "", "engine": "google", "ok": false, "transcribe_ms": 431.17}
+{"kind": "stt", "ts": 1777905157.749, "text": "Lavery my", "engine": "google", "ok": true, "transcribe_ms": 1333.85}
+{"kind": "stt", "ts": 1777905334.182, "text": "", "engine": "google", "ok": false, "transcribe_ms": 926.09}
+{"kind": "stt", "ts": 1777905339.335, "text": "", "engine": "google", "ok": false, "transcribe_ms": 578.61}
+{"kind": "stt", "ts": 1777905341.679, "text": "", "engine": "google", "ok": false, "transcribe_ms": 488.1}
+{"kind": "stt", "ts": 1777905345.927, "text": "", "engine": "google", "ok": false, "transcribe_ms": 813.57}
+{"kind": "stt", "ts": 1777905350.624, "text": "", "engine": "google", "ok": false, "transcribe_ms": 681.5}
+{"kind": "stt", "ts": 1777905353.617, "text": "play", "engine": "google", "ok": true, "transcribe_ms": 714.39}
+{"kind": "stt", "ts": 1777905357.992, "text": "", "engine": "google", "ok": false, "transcribe_ms": 542.47}
+{"kind": "stt", "ts": 1777905364.778, "text": "", "engine": "google", "ok": false, "transcribe_ms": 878.03}
+{"kind": "stt", "ts": 1777905367.001, "text": "", "engine": "google", "ok": false, "transcribe_ms": 542.3}
+{"kind": "stt", "ts": 1777905371.42, "text": "play", "engine": "google", "ok": true, "transcribe_ms": 640.87}
+{"kind": "stt", "ts": 1777905377.898, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1124.95}
+{"kind": "stt", "ts": 1777905382.604, "text": "", "engine": "google", "ok": false, "transcribe_ms": 896.56}
+{"kind": "stt", "ts": 1777905384.528, "text": "", "engine": "google", "ok": false, "transcribe_ms": 459.41}
+{"kind": "stt", "ts": 1777905387.857, "text": "", "engine": "google", "ok": false, "transcribe_ms": 529.06}
+{"kind": "stt", "ts": 1777905394.851, "text": "", "engine": "google", "ok": false, "transcribe_ms": 960.39}
+{"kind": "stt", "ts": 1777905397.621, "text": "", "engine": "google", "ok": false, "transcribe_ms": 693.92}
+{"kind": "stt", "ts": 1777905402.91, "text": "", "engine": "google", "ok": false, "transcribe_ms": 701.22}
+{"kind": "stt", "ts": 1777905409.315, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1146.92}
+{"kind": "stt", "ts": 1777905415.767, "text": "", "engine": "google", "ok": false, "transcribe_ms": 934.29}
+{"kind": "stt", "ts": 1777905420.085, "text": "", "engine": "google", "ok": false, "transcribe_ms": 781.02}
+{"kind": "stt", "ts": 1777905424.938, "text": "", "engine": "google", "ok": false, "transcribe_ms": 893.26}
+{"kind": "stt", "ts": 1777905427.51, "text": "", "engine": "google", "ok": false, "transcribe_ms": 557.05}
+{"kind": "stt", "ts": 1777905430.313, "text": "", "engine": "google", "ok": false, "transcribe_ms": 531.01}
+{"kind": "stt", "ts": 1777905436.666, "text": "", "engine": "google", "ok": false, "transcribe_ms": 898.2}
+{"kind": "stt", "ts": 1777905569.639, "text": "next song", "engine": "google", "ok": true, "transcribe_ms": 836.69}
+{"kind": "stt", "ts": 1777905575.149, "text": "", "engine": "google", "ok": false, "transcribe_ms": 549.3}
+{"kind": "stt", "ts": 1777905582.397, "text": "", "engine": "google", "ok": false, "transcribe_ms": 854.05}
+{"kind": "stt", "ts": 1777905585.851, "text": "", "engine": "google", "ok": false, "transcribe_ms": 772.82}
+{"kind": "stt", "ts": 1777905588.472, "text": "", "engine": "google", "ok": false, "transcribe_ms": 544.22}
+{"kind": "stt", "ts": 1777905592.28, "text": "", "engine": "google", "ok": false, "transcribe_ms": 588.41}
+{"kind": "stt", "ts": 1777905595.536, "text": "", "engine": "google", "ok": false, "transcribe_ms": 460.47}
+{"kind": "stt", "ts": 1777905601.767, "text": "", "engine": "google", "ok": false, "transcribe_ms": 920.05}
+{"kind": "stt", "ts": 1777905605.275, "text": "", "engine": "google", "ok": false, "transcribe_ms": 686.97}
+{"kind": "stt", "ts": 1777905607.937, "text": "", "engine": "google", "ok": false, "transcribe_ms": 657.09}
+{"kind": "stt", "ts": 1777905610.872, "text": "", "engine": "google", "ok": false, "transcribe_ms": 584.81}
+{"kind": "stt", "ts": 1777905617.23, "text": "", "engine": "google", "ok": false, "transcribe_ms": 916.54}
+{"kind": "stt", "ts": 1777905692.571, "text": "", "engine": "google", "ok": false, "transcribe_ms": 978.86}
+{"kind": "stt", "ts": 1777905697.818, "text": "", "engine": "google", "ok": false, "transcribe_ms": 614.0}
+{"kind": "stt", "ts": 1777905704.014, "text": "", "engine": "google", "ok": false, "transcribe_ms": 628.72}
+{"kind": "stt", "ts": 1777905706.42, "text": "", "engine": "google", "ok": false, "transcribe_ms": 642.13}
+{"kind": "stt", "ts": 1777905711.308, "text": "", "engine": "google", "ok": false, "transcribe_ms": 769.86}
+{"kind": "stt", "ts": 1777905721.614, "text": "", "engine": "google", "ok": false, "transcribe_ms": 685.88}
+{"kind": "stt", "ts": 1777905726.655, "text": "what", "engine": "google", "ok": true, "transcribe_ms": 1396.22}
+{"kind": "stt", "ts": 1777905733.758, "text": "", "engine": "google", "ok": false, "transcribe_ms": 622.26}
+{"kind": "stt", "ts": 1777905741.234, "text": "play the news", "engine": "google", "ok": true, "transcribe_ms": 692.39}
+{"kind": "stt", "ts": 1777905744.733, "text": "", "engine": "google", "ok": false, "transcribe_ms": 816.15}
+{"kind": "stt", "ts": 1777905746.742, "text": "", "engine": "google", "ok": false, "transcribe_ms": 518.45}
+{"kind": "stt", "ts": 1777905750.473, "text": "", "engine": "google", "ok": false, "transcribe_ms": 708.47}
+{"kind": "stt", "ts": 1777905758.074, "text": "", "engine": "google", "ok": false, "transcribe_ms": 634.54}
+{"kind": "stt", "ts": 1777905766.589, "text": "set alarm for 9:30 a.m. tomorrow morning", "engine": "google", "ok": true, "transcribe_ms": 1862.33}
+{"kind": "stt", "ts": 1777905769.341, "text": "", "engine": "google", "ok": false, "transcribe_ms": 621.17}
+{"kind": "stt", "ts": 1777905772.046, "text": "make", "engine": "google", "ok": true, "transcribe_ms": 618.51}
+{"kind": "stt", "ts": 1777905781.257, "text": "what do you", "engine": "google", "ok": true, "transcribe_ms": 1151.69}
+{"kind": "stt", "ts": 1777905789.545, "text": "set the thermostat to Sam's name", "engine": "google", "ok": true, "transcribe_ms": 1001.73}
+{"kind": "stt", "ts": 1777905794.165, "text": "", "engine": "google", "ok": false, "transcribe_ms": 633.03}
+{"kind": "stt", "ts": 1777905803.431, "text": "house", "engine": "google", "ok": true, "transcribe_ms": 612.2}
+{"kind": "stt", "ts": 1777905805.67, "text": "how close", "engine": "google", "ok": true, "transcribe_ms": 550.42}
+{"kind": "stt", "ts": 1777905809.326, "text": "", "engine": "google", "ok": false, "transcribe_ms": 628.63}
+{"kind": "stt", "ts": 1777905813.224, "text": "", "engine": "google", "ok": false, "transcribe_ms": 484.64}
+{"kind": "stt", "ts": 1777905816.164, "text": "", "engine": "google", "ok": false, "transcribe_ms": 616.71}
+{"kind": "stt", "ts": 1777905822.958, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1308.96}
+{"kind": "stt", "ts": 1777905831.445, "text": "", "engine": "google", "ok": false, "transcribe_ms": 917.62}
+{"kind": "stt", "ts": 1777905838.308, "text": "", "engine": "google", "ok": false, "transcribe_ms": 722.16}
+{"kind": "stt", "ts": 1777905841.727, "text": "is it over", "engine": "google", "ok": true, "transcribe_ms": 738.52}
+{"kind": "stt", "ts": 1777905846.121, "text": "how to make", "engine": "google", "ok": true, "transcribe_ms": 1068.7}
+{"kind": "stt", "ts": 1777905854.02, "text": "", "engine": "google", "ok": false, "transcribe_ms": 674.95}
+{"kind": "stt", "ts": 1777905857.285, "text": "guide", "engine": "google", "ok": true, "transcribe_ms": 770.64}
+{"kind": "stt", "ts": 1777905862.072, "text": "", "engine": "google", "ok": false, "transcribe_ms": 485.94}
+{"kind": "stt", "ts": 1777905869.703, "text": "what to do", "engine": "google", "ok": true, "transcribe_ms": 702.22}
+{"kind": "stt", "ts": 1777905873.681, "text": "", "engine": "google", "ok": false, "transcribe_ms": 830.84}
+{"kind": "stt", "ts": 1777905876.114, "text": "what to do", "engine": "google", "ok": true, "transcribe_ms": 620.43}
+{"kind": "stt", "ts": 1777905878.529, "text": "", "engine": "google", "ok": false, "transcribe_ms": 597.01}
+{"kind": "stt", "ts": 1777905882.133, "text": "", "engine": "google", "ok": false, "transcribe_ms": 770.95}
+{"kind": "stt", "ts": 1777905884.559, "text": "", "engine": "google", "ok": false, "transcribe_ms": 590.18}
+{"kind": "stt", "ts": 1777905888.221, "text": "", "engine": "google", "ok": false, "transcribe_ms": 634.38}
+{"kind": "stt", "ts": 1777905891.306, "text": "", "engine": "google", "ok": false, "transcribe_ms": 592.39}
+{"kind": "stt", "ts": 1777905895.319, "text": "", "engine": "google", "ok": false, "transcribe_ms": 685.85}
+{"kind": "stt", "ts": 1777905899.02, "text": "Where is the", "engine": "google", "ok": true, "transcribe_ms": 775.81}
+{"kind": "stt", "ts": 1777905902.02, "text": "", "engine": "google", "ok": false, "transcribe_ms": 458.84}
+{"kind": "stt", "ts": 1777905905.772, "text": "", "engine": "google", "ok": false, "transcribe_ms": 603.96}
+{"kind": "stt", "ts": 1777905910.138, "text": "", "engine": "google", "ok": false, "transcribe_ms": 675.22}
+{"kind": "stt", "ts": 1777905913.596, "text": "", "engine": "google", "ok": false, "transcribe_ms": 732.51}
+{"kind": "stt", "ts": 1777905916.378, "text": "", "engine": "google", "ok": false, "transcribe_ms": 735.21}
+{"kind": "stt", "ts": 1777905920.3, "text": "", "engine": "google", "ok": false, "transcribe_ms": 525.82}
+{"kind": "stt", "ts": 1777906186.59, "text": "", "engine": "google", "ok": false, "transcribe_ms": 694.79}
+{"kind": "stt", "ts": 1777906193.859, "text": "", "engine": "google", "ok": false, "transcribe_ms": 761.68}
+{"kind": "stt", "ts": 1777906196.716, "text": "", "engine": "google", "ok": false, "transcribe_ms": 621.39}
+{"kind": "stt", "ts": 1777906200.7, "text": "", "engine": "google", "ok": false, "transcribe_ms": 679.84}
+{"kind": "stt", "ts": 1777906205.45, "text": "", "engine": "google", "ok": false, "transcribe_ms": 823.16}
+{"kind": "stt", "ts": 1777906213.705, "text": "", "engine": "google", "ok": false, "transcribe_ms": 613.22}
+{"kind": "stt", "ts": 1777906220.35, "text": "103.102 AC", "engine": "google", "ok": true, "transcribe_ms": 1087.95}
+{"kind": "stt", "ts": 1777906226.072, "text": "what", "engine": "google", "ok": true, "transcribe_ms": 689.58}
+{"kind": "stt", "ts": 1777906231.964, "text": "", "engine": "google", "ok": false, "transcribe_ms": 579.76}
+{"kind": "stt", "ts": 1777906234.56, "text": "", "engine": "google", "ok": false, "transcribe_ms": 397.85}
+{"kind": "stt", "ts": 1777906238.348, "text": "what", "engine": "google", "ok": true, "transcribe_ms": 758.29}
+{"kind": "stt", "ts": 1777906248.842, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1356.59}
+{"kind": "stt", "ts": 1777906252.012, "text": "", "engine": "google", "ok": false, "transcribe_ms": 655.69}
+{"kind": "stt", "ts": 1777906254.688, "text": "", "engine": "google", "ok": false, "transcribe_ms": 540.72}
+{"kind": "stt", "ts": 1777906256.989, "text": "", "engine": "google", "ok": false, "transcribe_ms": 470.38}
+{"kind": "stt", "ts": 1777906261.239, "text": "", "engine": "google", "ok": false, "transcribe_ms": 586.36}
+{"kind": "stt", "ts": 1777906265.112, "text": "what", "engine": "google", "ok": true, "transcribe_ms": 1156.82}
+{"kind": "stt", "ts": 1777906269.524, "text": "", "engine": "google", "ok": false, "transcribe_ms": 773.66}
+{"kind": "stt", "ts": 1777906272.258, "text": "", "engine": "google", "ok": false, "transcribe_ms": 544.34}
+{"kind": "stt", "ts": 1777906277.596, "text": "", "engine": "google", "ok": false, "transcribe_ms": 783.69}
+{"kind": "stt", "ts": 1777906281.697, "text": "", "engine": "google", "ok": false, "transcribe_ms": 705.1}
+{"kind": "stt", "ts": 1777906286.264, "text": "", "engine": "google", "ok": false, "transcribe_ms": 588.89}
+{"kind": "stt", "ts": 1777906290.754, "text": "", "engine": "google", "ok": false, "transcribe_ms": 997.85}
+{"kind": "stt", "ts": 1777906292.815, "text": "", "engine": "google", "ok": false, "transcribe_ms": 544.71}
+{"kind": "stt", "ts": 1777906303.832, "text": "", "engine": "google", "ok": false, "transcribe_ms": 742.81}
+{"kind": "stt", "ts": 1777906310.356, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1039.5}
+{"kind": "stt", "ts": 1777906314.15, "text": "Columbia", "engine": "google", "ok": true, "transcribe_ms": 674.18}
+{"kind": "stt", "ts": 1777906317.743, "text": "", "engine": "google", "ok": false, "transcribe_ms": 675.59}
+{"kind": "stt", "ts": 1777906328.32, "text": "", "engine": "google", "ok": false, "transcribe_ms": 492.96}
+{"kind": "stt", "ts": 1777906331.538, "text": "", "engine": "google", "ok": false, "transcribe_ms": 471.64}
+{"kind": "stt", "ts": 1777906338.218, "text": "", "engine": "google", "ok": false, "transcribe_ms": 569.98}
+{"kind": "stt", "ts": 1777906340.923, "text": "", "engine": "google", "ok": false, "transcribe_ms": 450.5}
+{"kind": "stt", "ts": 1777906347.583, "text": "", "engine": "google", "ok": false, "transcribe_ms": 885.02}
+{"kind": "stt", "ts": 1777906350.87, "text": "", "engine": "google", "ok": false, "transcribe_ms": 570.72}
+{"kind": "stt", "ts": 1777906355.837, "text": "", "engine": "google", "ok": false, "transcribe_ms": 964.1}
+{"kind": "stt", "ts": 1777906359.033, "text": "", "engine": "google", "ok": false, "transcribe_ms": 641.32}
+{"kind": "stt", "ts": 1777906362.167, "text": "", "engine": "google", "ok": false, "transcribe_ms": 559.33}
+{"kind": "stt", "ts": 1777906366.044, "text": "", "engine": "google", "ok": false, "transcribe_ms": 576.36}
+{"kind": "stt", "ts": 1777906374.979, "text": "", "engine": "google", "ok": false, "transcribe_ms": 523.55}
+{"kind": "stt", "ts": 1777906379.791, "text": "", "engine": "google", "ok": false, "transcribe_ms": 669.18}
+{"kind": "stt", "ts": 1777906382.581, "text": "", "engine": "google", "ok": false, "transcribe_ms": 570.16}
+{"kind": "stt", "ts": 1777906386.316, "text": "", "engine": "google", "ok": false, "transcribe_ms": 494.54}
+{"kind": "stt", "ts": 1777906612.508, "text": "", "engine": "google", "ok": false, "transcribe_ms": 948.42}
+{"kind": "stt", "ts": 1777906620.306, "text": "", "engine": "google", "ok": false, "transcribe_ms": 872.98}
+{"kind": "stt", "ts": 1777922198.087, "text": "", "engine": "google", "ok": false, "transcribe_ms": 902.0}
+{"kind": "stt", "ts": 1777922201.548, "text": "", "engine": "google", "ok": false, "transcribe_ms": 586.24}
+{"kind": "stt", "ts": 1777922209.25, "text": "", "engine": "google", "ok": false, "transcribe_ms": 640.48}
+{"kind": "stt", "ts": 1777922215.268, "text": "", "engine": "google", "ok": false, "transcribe_ms": 732.48}
+{"kind": "stt", "ts": 1777922221.4, "text": "", "engine": "google", "ok": false, "transcribe_ms": 668.66}
+{"kind": "stt", "ts": 1777922227.053, "text": "", "engine": "google", "ok": false, "transcribe_ms": 661.76}
+{"kind": "stt", "ts": 1777922233.358, "text": "", "engine": "google", "ok": false, "transcribe_ms": 812.27}
+{"kind": "stt", "ts": 1777922239.379, "text": "", "engine": "google", "ok": false, "transcribe_ms": 708.43}
+{"kind": "stt", "ts": 1777922246.914, "text": "", "engine": "google", "ok": false, "transcribe_ms": 706.66}
+{"kind": "stt", "ts": 1777922249.128, "text": "", "engine": "google", "ok": false, "transcribe_ms": 354.51}
+{"kind": "stt", "ts": 1777922255.02, "text": "", "engine": "google", "ok": false, "transcribe_ms": 607.23}
+{"kind": "stt", "ts": 1777922261.211, "text": "", "engine": "google", "ok": false, "transcribe_ms": 880.98}
+{"kind": "stt", "ts": 1777922267.091, "text": "", "engine": "google", "ok": false, "transcribe_ms": 617.08}
+{"kind": "stt", "ts": 1777922272.636, "text": "", "engine": "google", "ok": false, "transcribe_ms": 808.19}
+{"kind": "stt", "ts": 1777922279.126, "text": "", "engine": "google", "ok": false, "transcribe_ms": 839.53}
+{"kind": "stt", "ts": 1777922281.442, "text": "", "engine": "google", "ok": false, "transcribe_ms": 431.95}
+{"kind": "stt", "ts": 1777922287.794, "text": "", "engine": "google", "ok": false, "transcribe_ms": 978.49}
+{"kind": "stt", "ts": 1777922294.046, "text": "", "engine": "google", "ok": false, "transcribe_ms": 709.94}
+{"kind": "stt", "ts": 1777922300.767, "text": "", "engine": "google", "ok": false, "transcribe_ms": 684.75}
+{"kind": "stt", "ts": 1777922306.82, "text": "", "engine": "google", "ok": false, "transcribe_ms": 766.69}
+{"kind": "stt", "ts": 1777922312.916, "text": "", "engine": "google", "ok": false, "transcribe_ms": 658.73}
+{"kind": "stt", "ts": 1777922316.486, "text": "", "engine": "google", "ok": false, "transcribe_ms": 418.69}
+{"kind": "stt", "ts": 1777922320.429, "text": "", "engine": "google", "ok": false, "transcribe_ms": 467.43}
+{"kind": "stt", "ts": 1777922326.504, "text": "", "engine": "google", "ok": false, "transcribe_ms": 829.58}
+{"kind": "stt", "ts": 1777922329.297, "text": "", "engine": "google", "ok": false, "transcribe_ms": 528.81}
+{"kind": "stt", "ts": 1777922334.996, "text": "", "engine": "google", "ok": false, "transcribe_ms": 772.57}
+{"kind": "stt", "ts": 1777922341.349, "text": "guitar 201", "engine": "google", "ok": true, "transcribe_ms": 1111.25}
+{"kind": "stt", "ts": 1777922349.753, "text": "Super 1 in Panama Mandy going to", "engine": "google", "ok": true, "transcribe_ms": 1701.08}
+{"kind": "stt", "ts": 1777922358.418, "text": "", "engine": "google", "ok": false, "transcribe_ms": 648.66}
+{"kind": "stt", "ts": 1777922365.328, "text": "stop continue right", "engine": "google", "ok": true, "transcribe_ms": 1069.42}
+{"kind": "stt", "ts": 1777922367.748, "text": "", "engine": "google", "ok": false, "transcribe_ms": 529.07}
+{"kind": "stt", "ts": 1777922377.121, "text": "", "engine": "google", "ok": false, "transcribe_ms": 660.47}
+{"kind": "stt", "ts": 1777922383.277, "text": "", "engine": "google", "ok": false, "transcribe_ms": 753.15}
+{"kind": "stt", "ts": 1777922389.305, "text": "", "engine": "google", "ok": false, "transcribe_ms": 689.09}
+{"kind": "stt", "ts": 1777922396.409, "text": "", "engine": "google", "ok": false, "transcribe_ms": 943.72}
+{"kind": "stt", "ts": 1777922402.519, "text": "", "engine": "google", "ok": false, "transcribe_ms": 629.25}
+{"kind": "stt", "ts": 1777922408.52, "text": "", "engine": "google", "ok": false, "transcribe_ms": 691.32}
+{"kind": "stt", "ts": 1777922412.983, "text": "", "engine": "google", "ok": false, "transcribe_ms": 756.79}
+{"kind": "stt", "ts": 1777922421.502, "text": "", "engine": "google", "ok": false, "transcribe_ms": 737.13}
+{"kind": "stt", "ts": 1777922428.028, "text": "", "engine": "google", "ok": false, "transcribe_ms": 816.44}
+{"kind": "stt", "ts": 1777922430.675, "text": "", "engine": "google", "ok": false, "transcribe_ms": 667.75}
+{"kind": "stt", "ts": 1777922436.421, "text": "I see computer keyboard to your left", "engine": "google", "ok": true, "transcribe_ms": 863.39}
+{"kind": "stt", "ts": 1777922441.473, "text": "", "engine": "google", "ok": false, "transcribe_ms": 805.6}
+{"kind": "stt", "ts": 1777922443.978, "text": "", "engine": "google", "ok": false, "transcribe_ms": 475.28}
+{"kind": "stt", "ts": 1777922447.751, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 806.95}
+{"kind": "stt", "ts": 1777922455.945, "text": "", "engine": "google", "ok": false, "transcribe_ms": 739.07}
+{"kind": "stt", "ts": 1777922462.798, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1052.93}
+{"kind": "stt", "ts": 1777922499.044, "text": "Maine map system", "engine": "google", "ok": true, "transcribe_ms": 634.23}
+{"kind": "stt", "ts": 1777922505.303, "text": "", "engine": "google", "ok": false, "transcribe_ms": 927.95}
+{"kind": "stt", "ts": 1777922515.076, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 969.46}
+{"kind": "stt", "ts": 1777922518.882, "text": "", "engine": "google", "ok": false, "transcribe_ms": 798.58}
+{"kind": "stt", "ts": 1777922521.648, "text": "", "engine": "google", "ok": false, "transcribe_ms": 666.1}
+{"kind": "stt", "ts": 1777922530.15, "text": "", "engine": "google", "ok": false, "transcribe_ms": 614.28}
+{"kind": "stt", "ts": 1777922534.653, "text": "", "engine": "google", "ok": false, "transcribe_ms": 843.13}
+{"kind": "stt", "ts": 1777922542.444, "text": "", "engine": "google", "ok": false, "transcribe_ms": 860.83}
+{"kind": "stt", "ts": 1777922547.105, "text": "", "engine": "google", "ok": false, "transcribe_ms": 662.91}
+{"kind": "stt", "ts": 1777922553.354, "text": "", "engine": "google", "ok": false, "transcribe_ms": 802.9}
+{"kind": "stt", "ts": 1777922558.434, "text": "", "engine": "google", "ok": false, "transcribe_ms": 663.4}
+{"kind": "stt", "ts": 1777922563.081, "text": "", "engine": "google", "ok": false, "transcribe_ms": 723.74}
+{"kind": "stt", "ts": 1777922569.824, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1012.77}
+{"kind": "stt", "ts": 1777922575.617, "text": "", "engine": "google", "ok": false, "transcribe_ms": 577.85}
+{"kind": "stt", "ts": 1777922583.494, "text": "", "engine": "google", "ok": false, "transcribe_ms": 849.42}
+{"kind": "stt", "ts": 1777922620.167, "text": "meaning of system", "engine": "google", "ok": true, "transcribe_ms": 690.62}
+{"kind": "stt", "ts": 1777922628.424, "text": "", "engine": "google", "ok": false, "transcribe_ms": 771.21}
+{"kind": "stt", "ts": 1777922630.291, "text": "", "engine": "google", "ok": false, "transcribe_ms": 442.21}
+{"kind": "stt", "ts": 1777922632.58, "text": "", "engine": "google", "ok": false, "transcribe_ms": 416.57}
+{"kind": "stt", "ts": 1777922637.766, "text": "", "engine": "google", "ok": false, "transcribe_ms": 536.03}
+{"kind": "stt", "ts": 1777922642.562, "text": "", "engine": "google", "ok": false, "transcribe_ms": 586.48}
+{"kind": "stt", "ts": 1777922648.756, "text": "", "engine": "google", "ok": false, "transcribe_ms": 495.37}
+{"kind": "stt", "ts": 1777922655.38, "text": "", "engine": "google", "ok": false, "transcribe_ms": 879.4}
+{"kind": "stt", "ts": 1777922660.209, "text": "", "engine": "google", "ok": false, "transcribe_ms": 790.9}
+{"kind": "stt", "ts": 1777922663.511, "text": "", "engine": "google", "ok": false, "transcribe_ms": 579.45}
+{"kind": "stt", "ts": 1777922666.276, "text": "", "engine": "google", "ok": false, "transcribe_ms": 517.98}
+{"kind": "stt", "ts": 1777922669.455, "text": "", "engine": "google", "ok": false, "transcribe_ms": 623.01}
+{"kind": "stt", "ts": 1777922673.945, "text": "", "engine": "google", "ok": false, "transcribe_ms": 780.45}
+{"kind": "stt", "ts": 1777922676.639, "text": "", "engine": "google", "ok": false, "transcribe_ms": 543.22}
+{"kind": "stt", "ts": 1777922679.807, "text": "", "engine": "google", "ok": false, "transcribe_ms": 608.04}
+{"kind": "stt", "ts": 1777922687.897, "text": "", "engine": "google", "ok": false, "transcribe_ms": 790.94}
+{"kind": "stt", "ts": 1777922691.782, "text": "", "engine": "google", "ok": false, "transcribe_ms": 574.86}
+{"kind": "stt", "ts": 1777922698.387, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1136.54}
+{"kind": "stt", "ts": 1777922704.165, "text": "", "engine": "google", "ok": false, "transcribe_ms": 586.33}
+{"kind": "stt", "ts": 1777922709.435, "text": "", "engine": "google", "ok": false, "transcribe_ms": 485.02}
+{"kind": "stt", "ts": 1777922714.427, "text": "", "engine": "google", "ok": false, "transcribe_ms": 580.31}
+{"kind": "stt", "ts": 1777922717.963, "text": "", "engine": "google", "ok": false, "transcribe_ms": 449.87}
+{"kind": "stt", "ts": 1777922721.403, "text": "", "engine": "google", "ok": false, "transcribe_ms": 570.34}
+{"kind": "stt", "ts": 1777922726.682, "text": "", "engine": "google", "ok": false, "transcribe_ms": 654.3}
+{"kind": "stt", "ts": 1777922732.989, "text": "", "engine": "google", "ok": false, "transcribe_ms": 694.33}
+{"kind": "stt", "ts": 1777922735.922, "text": "", "engine": "google", "ok": false, "transcribe_ms": 437.15}
+{"kind": "stt", "ts": 1777922742.66, "text": "", "engine": "google", "ok": false, "transcribe_ms": 689.4}
+{"kind": "stt", "ts": 1777922748.596, "text": "", "engine": "google", "ok": false, "transcribe_ms": 606.28}
+{"kind": "stt", "ts": 1777922752.98, "text": "", "engine": "google", "ok": false, "transcribe_ms": 528.74}
+{"kind": "stt", "ts": 1777922759.567, "text": "", "engine": "google", "ok": false, "transcribe_ms": 915.39}
+{"kind": "stt", "ts": 1777922765.595, "text": "", "engine": "google", "ok": false, "transcribe_ms": 655.97}
+{"kind": "stt", "ts": 1777922771.588, "text": "", "engine": "google", "ok": false, "transcribe_ms": 625.06}
+{"kind": "stt", "ts": 1777922777.473, "text": "", "engine": "google", "ok": false, "transcribe_ms": 622.75}
+{"kind": "stt", "ts": 1777922781.955, "text": "", "engine": "google", "ok": false, "transcribe_ms": 731.12}
+{"kind": "stt", "ts": 1777922787.959, "text": "", "engine": "google", "ok": false, "transcribe_ms": 765.34}
+{"kind": "stt", "ts": 1777922794.083, "text": "", "engine": "google", "ok": false, "transcribe_ms": 713.58}
+{"kind": "stt", "ts": 1777922796.492, "text": "", "engine": "google", "ok": false, "transcribe_ms": 435.36}
+{"kind": "stt", "ts": 1777922801.519, "text": "", "engine": "google", "ok": false, "transcribe_ms": 442.49}
+{"kind": "stt", "ts": 1777922803.777, "text": "", "engine": "google", "ok": false, "transcribe_ms": 447.84}
+{"kind": "stt", "ts": 1777922810.347, "text": "", "engine": "google", "ok": false, "transcribe_ms": 965.71}
+{"kind": "stt", "ts": 1777922813.842, "text": "", "engine": "google", "ok": false, "transcribe_ms": 574.73}
+{"kind": "stt", "ts": 1777922819.803, "text": "", "engine": "google", "ok": false, "transcribe_ms": 616.21}
+{"kind": "stt", "ts": 1777922826.111, "text": "", "engine": "google", "ok": false, "transcribe_ms": 942.08}
+{"kind": "stt", "ts": 1777922833.026, "text": "", "engine": "google", "ok": false, "transcribe_ms": 945.43}
+{"kind": "stt", "ts": 1777922838.849, "text": "", "engine": "google", "ok": false, "transcribe_ms": 559.22}
+{"kind": "stt", "ts": 1777922842.857, "text": "", "engine": "google", "ok": false, "transcribe_ms": 639.14}
+{"kind": "stt", "ts": 1777922846.85, "text": "", "engine": "google", "ok": false, "transcribe_ms": 646.79}
+{"kind": "stt", "ts": 1777922852.432, "text": "", "engine": "google", "ok": false, "transcribe_ms": 572.94}
+{"kind": "stt", "ts": 1777922858.38, "text": "", "engine": "google", "ok": false, "transcribe_ms": 581.53}
+{"kind": "stt", "ts": 1777922861.689, "text": "", "engine": "google", "ok": false, "transcribe_ms": 526.51}
+{"kind": "stt", "ts": 1777922867.69, "text": "", "engine": "google", "ok": false, "transcribe_ms": 566.37}
+{"kind": "stt", "ts": 1777922874.072, "text": "", "engine": "google", "ok": false, "transcribe_ms": 710.47}
+{"kind": "stt", "ts": 1777922881.042, "text": "", "engine": "google", "ok": false, "transcribe_ms": 656.19}
+{"kind": "stt", "ts": 1777922884.804, "text": "", "engine": "google", "ok": false, "transcribe_ms": 441.41}
+{"kind": "stt", "ts": 1777922889.246, "text": "", "engine": "google", "ok": false, "transcribe_ms": 563.2}
+{"kind": "stt", "ts": 1777922915.375, "text": "", "engine": "google", "ok": false, "transcribe_ms": 668.96}
+{"kind": "stt", "ts": 1777922922.029, "text": "", "engine": "google", "ok": false, "transcribe_ms": 598.04}
+{"kind": "stt", "ts": 1777922926.521, "text": "", "engine": "google", "ok": false, "transcribe_ms": 745.83}
+{"kind": "stt", "ts": 1777922928.737, "text": "", "engine": "google", "ok": false, "transcribe_ms": 536.83}
+{"kind": "stt", "ts": 1777922932.543, "text": "", "engine": "google", "ok": false, "transcribe_ms": 522.78}
+{"kind": "stt", "ts": 1777922935.454, "text": "", "engine": "google", "ok": false, "transcribe_ms": 497.15}
+{"kind": "stt", "ts": 1777922943.342, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1016.4}
+{"kind": "stt", "ts": 1777922947.891, "text": "", "engine": "google", "ok": false, "transcribe_ms": 596.27}
+{"kind": "stt", "ts": 1777922951.725, "text": "", "engine": "google", "ok": false, "transcribe_ms": 759.06}
+{"kind": "stt", "ts": 1777922956.389, "text": "guide me", "engine": "google", "ok": true, "transcribe_ms": 700.56}
+{"kind": "stt", "ts": 1777922959.628, "text": "", "engine": "google", "ok": false, "transcribe_ms": 823.98}
+{"kind": "stt", "ts": 1777922963.544, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 732.81}
+{"kind": "stt", "ts": 1777922968.537, "text": "", "engine": "google", "ok": false, "transcribe_ms": 830.67}
+{"kind": "stt", "ts": 1777922979.544, "text": "how close is the computer", "engine": "google", "ok": true, "transcribe_ms": 1085.15}
+{"kind": "stt", "ts": 1777922985.253, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1299.9}
+{"kind": "stt", "ts": 1777922989.876, "text": "can I walk straight", "engine": "google", "ok": true, "transcribe_ms": 767.41}
+{"kind": "stt", "ts": 1777922994.119, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1032.47}
+{"kind": "stt", "ts": 1777922998.077, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 701.78}
+{"kind": "stt", "ts": 1777923005.648, "text": "", "engine": "google", "ok": false, "transcribe_ms": 778.49}
+{"kind": "stt", "ts": 1777923009.514, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 837.5}
+{"kind": "stt", "ts": 1777923013.679, "text": "", "engine": "google", "ok": false, "transcribe_ms": 956.95}
+{"kind": "stt", "ts": 1777923020.07, "text": "okay shut down", "engine": "google", "ok": true, "transcribe_ms": 651.91}
+{"kind": "stt", "ts": 1777923022.356, "text": "", "engine": "google", "ok": false, "transcribe_ms": 644.92}
+{"kind": "stt", "ts": 1777923324.474, "text": "", "engine": "google", "ok": false, "transcribe_ms": 659.18}
+{"kind": "stt", "ts": 1777923336.126, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1238.91}
+{"kind": "stt", "ts": 1777923341.944, "text": "", "engine": "google", "ok": false, "transcribe_ms": 624.31}
+{"kind": "stt", "ts": 1777923346.506, "text": "", "engine": "google", "ok": false, "transcribe_ms": 670.23}
+{"kind": "stt", "ts": 1777923355.235, "text": "", "engine": "google", "ok": false, "transcribe_ms": 965.79}
+{"kind": "stt", "ts": 1777923362.19, "text": "stop", "engine": "google", "ok": true, "transcribe_ms": 619.3}
+{"kind": "stt", "ts": 1777923367.6, "text": "", "engine": "google", "ok": false, "transcribe_ms": 860.02}
+{"kind": "stt", "ts": 1777923374.806, "text": "", "engine": "google", "ok": false, "transcribe_ms": 504.07}
+{"kind": "stt", "ts": 1777923379.366, "text": "", "engine": "google", "ok": false, "transcribe_ms": 979.14}
+{"kind": "stt", "ts": 1777923388.818, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1054.64}
+{"kind": "stt", "ts": 1777923395.298, "text": "", "engine": "google", "ok": false, "transcribe_ms": 898.12}
+{"kind": "stt", "ts": 1777923401.865, "text": "", "engine": "google", "ok": false, "transcribe_ms": 873.9}
+{"kind": "stt", "ts": 1777923408.576, "text": "object", "engine": "google", "ok": true, "transcribe_ms": 838.38}
+{"kind": "stt", "ts": 1777923416.955, "text": "what", "engine": "google", "ok": true, "transcribe_ms": 916.53}
+{"kind": "stt", "ts": 1777923421.654, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 539.31}
+{"kind": "stt", "ts": 1777923427.692, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1009.05}
+{"kind": "stt", "ts": 1777923433.734, "text": "what's on my list", "engine": "google", "ok": true, "transcribe_ms": 853.16}
+{"kind": "stt", "ts": 1777923441.527, "text": "", "engine": "google", "ok": false, "transcribe_ms": 677.64}
+{"kind": "stt", "ts": 1777923444.463, "text": "on my left", "engine": "google", "ok": true, "transcribe_ms": 550.24}
+{"kind": "stt", "ts": 1777923447.661, "text": "", "engine": "google", "ok": false, "transcribe_ms": 502.57}
+{"kind": "stt", "ts": 1777923453.872, "text": "what's on my ride", "engine": "google", "ok": true, "transcribe_ms": 1120.95}
+{"kind": "stt", "ts": 1777923459.13, "text": "", "engine": "google", "ok": false, "transcribe_ms": 867.62}
+{"kind": "stt", "ts": 1777923467.541, "text": "what do", "engine": "google", "ok": true, "transcribe_ms": 596.6}
+{"kind": "stt", "ts": 1777923477.151, "text": "", "engine": "google", "ok": false, "transcribe_ms": 860.34}
+{"kind": "stt", "ts": 1777923479.376, "text": "", "engine": "google", "ok": false, "transcribe_ms": 505.09}
+{"kind": "stt", "ts": 1777923486.163, "text": "", "engine": "google", "ok": false, "transcribe_ms": 727.82}
+{"kind": "stt", "ts": 1777923496.199, "text": "", "engine": "google", "ok": false, "transcribe_ms": 986.72}
+{"kind": "stt", "ts": 1777923503.366, "text": "", "engine": "google", "ok": false, "transcribe_ms": 711.19}
+{"kind": "stt", "ts": 1777923509.1, "text": "", "engine": "google", "ok": false, "transcribe_ms": 818.82}
+{"kind": "stt", "ts": 1777923513.921, "text": "", "engine": "google", "ok": false, "transcribe_ms": 842.25}
+{"kind": "stt", "ts": 1777923520.266, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1081.93}
+{"kind": "stt", "ts": 1777923525.177, "text": "", "engine": "google", "ok": false, "transcribe_ms": 821.39}
+{"kind": "stt", "ts": 1777923529.172, "text": "", "engine": "google", "ok": false, "transcribe_ms": 732.48}
+{"kind": "stt", "ts": 1777923534.382, "text": "", "engine": "google", "ok": false, "transcribe_ms": 654.26}
+{"kind": "stt", "ts": 1777923537.466, "text": "", "engine": "google", "ok": false, "transcribe_ms": 637.17}
+{"kind": "stt", "ts": 1777923541.599, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 718.01}
+{"kind": "stt", "ts": 1777923547.911, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1040.09}
+{"kind": "stt", "ts": 1777923551.787, "text": "", "engine": "google", "ok": false, "transcribe_ms": 851.91}
+{"kind": "stt", "ts": 1777923557.369, "text": "", "engine": "google", "ok": false, "transcribe_ms": 975.05}
+{"kind": "stt", "ts": 1777924145.143, "text": "", "engine": "google", "ok": false, "transcribe_ms": 792.27}
+{"kind": "stt", "ts": 1777924149.541, "text": "", "engine": "google", "ok": false, "transcribe_ms": 554.69}
+{"kind": "stt", "ts": 1777924152.823, "text": "", "engine": "google", "ok": false, "transcribe_ms": 770.79}
+{"kind": "stt", "ts": 1777924155.326, "text": "", "engine": "google", "ok": false, "transcribe_ms": 543.08}
+{"kind": "stt", "ts": 1777924159.441, "text": "", "engine": "google", "ok": false, "transcribe_ms": 770.75}
+{"kind": "stt", "ts": 1777924162.906, "text": "", "engine": "google", "ok": false, "transcribe_ms": 738.63}
+{"kind": "stt", "ts": 1777924172.768, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1155.82}
+{"kind": "stt", "ts": 1777924175.375, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 736.71}
+{"kind": "stt", "ts": 1777924182.495, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 876.77}
+{"kind": "stt", "ts": 1777924186.869, "text": "", "engine": "google", "ok": false, "transcribe_ms": 902.89}
+{"kind": "stt", "ts": 1777924196.143, "text": "how close is the", "engine": "google", "ok": true, "transcribe_ms": 969.05}
+{"kind": "stt", "ts": 1777924199.627, "text": "", "engine": "google", "ok": false, "transcribe_ms": 851.42}
+{"kind": "stt", "ts": 1777924208.978, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 805.58}
+{"kind": "stt", "ts": 1777924213.138, "text": "", "engine": "google", "ok": false, "transcribe_ms": 837.03}
+{"kind": "stt", "ts": 1777924226.047, "text": "how close is the bed", "engine": "google", "ok": true, "transcribe_ms": 1418.71}
+{"kind": "stt", "ts": 1777924230.881, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1017.12}
+{"kind": "stt", "ts": 1777924241.018, "text": "how close is the door", "engine": "google", "ok": true, "transcribe_ms": 1051.42}
+{"kind": "stt", "ts": 1777924245.266, "text": "", "engine": "google", "ok": false, "transcribe_ms": 912.85}
+{"kind": "stt", "ts": 1777924254.191, "text": "", "engine": "google", "ok": false, "transcribe_ms": 503.14}
+{"kind": "stt", "ts": 1777924258.632, "text": "", "engine": "google", "ok": false, "transcribe_ms": 538.07}
+{"kind": "stt", "ts": 1777924263.364, "text": "", "engine": "google", "ok": false, "transcribe_ms": 511.82}
+{"kind": "stt", "ts": 1777924269.35, "text": "", "engine": "google", "ok": false, "transcribe_ms": 614.0}
+{"kind": "stt", "ts": 1777924274.548, "text": "", "engine": "google", "ok": false, "transcribe_ms": 433.93}
+{"kind": "stt", "ts": 1777924280.68, "text": "", "engine": "google", "ok": false, "transcribe_ms": 784.86}
+{"kind": "stt", "ts": 1777924282.832, "text": "", "engine": "google", "ok": false, "transcribe_ms": 396.22}
+{"kind": "stt", "ts": 1777924287.377, "text": "", "engine": "google", "ok": false, "transcribe_ms": 452.91}
+{"kind": "stt", "ts": 1777924291.104, "text": "", "engine": "google", "ok": false, "transcribe_ms": 464.47}
+{"kind": "stt", "ts": 1777924297.219, "text": "", "engine": "google", "ok": false, "transcribe_ms": 722.37}
+{"kind": "stt", "ts": 1777924303.86, "text": "", "engine": "google", "ok": false, "transcribe_ms": 866.45}
+{"kind": "stt", "ts": 1777924310.479, "text": "", "engine": "google", "ok": false, "transcribe_ms": 676.39}
+{"kind": "stt", "ts": 1777924316.52, "text": "", "engine": "google", "ok": false, "transcribe_ms": 792.5}
+{"kind": "stt", "ts": 1777924321.735, "text": "", "engine": "google", "ok": false, "transcribe_ms": 547.05}
+{"kind": "stt", "ts": 1777924327.742, "text": "", "engine": "google", "ok": false, "transcribe_ms": 663.24}
+{"kind": "stt", "ts": 1777924333.658, "text": "", "engine": "google", "ok": false, "transcribe_ms": 605.81}
+{"kind": "stt", "ts": 1777924339.573, "text": "", "engine": "google", "ok": false, "transcribe_ms": 587.08}
+{"kind": "stt", "ts": 1777924342.236, "text": "", "engine": "google", "ok": false, "transcribe_ms": 507.87}
+{"kind": "stt", "ts": 1777924348.131, "text": "", "engine": "google", "ok": false, "transcribe_ms": 656.3}
+{"kind": "stt", "ts": 1777924354.28, "text": "", "engine": "google", "ok": false, "transcribe_ms": 667.83}
+{"kind": "stt", "ts": 1777924360.794, "text": "", "engine": "google", "ok": false, "transcribe_ms": 906.79}
+{"kind": "stt", "ts": 1777924363.905, "text": "", "engine": "google", "ok": false, "transcribe_ms": 426.34}
+{"kind": "stt", "ts": 1777924371.109, "text": "", "engine": "google", "ok": false, "transcribe_ms": 997.47}
+{"kind": "stt", "ts": 1777924377.375, "text": "", "engine": "google", "ok": false, "transcribe_ms": 619.15}
+{"kind": "stt", "ts": 1777924379.953, "text": "", "engine": "google", "ok": false, "transcribe_ms": 598.83}
+{"kind": "stt", "ts": 1777924385.985, "text": "", "engine": "google", "ok": false, "transcribe_ms": 622.93}
+{"kind": "stt", "ts": 1777924392.076, "text": "", "engine": "google", "ok": false, "transcribe_ms": 763.54}
+{"kind": "stt", "ts": 1777924398.888, "text": "", "engine": "google", "ok": false, "transcribe_ms": 976.08}
+{"kind": "stt", "ts": 1777924405.094, "text": "", "engine": "google", "ok": false, "transcribe_ms": 917.57}
+{"kind": "stt", "ts": 1777924411.353, "text": "", "engine": "google", "ok": false, "transcribe_ms": 909.51}
+{"kind": "stt", "ts": 1777924417.842, "text": "", "engine": "google", "ok": false, "transcribe_ms": 669.72}
+{"kind": "stt", "ts": 1777924423.944, "text": "", "engine": "google", "ok": false, "transcribe_ms": 623.36}
+{"kind": "stt", "ts": 1777924430.03, "text": "", "engine": "google", "ok": false, "transcribe_ms": 754.11}
+{"kind": "stt", "ts": 1777924435.895, "text": "", "engine": "google", "ok": false, "transcribe_ms": 598.27}
+{"kind": "stt", "ts": 1777924441.91, "text": "", "engine": "google", "ok": false, "transcribe_ms": 687.55}
+{"kind": "stt", "ts": 1777924448.201, "text": "", "engine": "google", "ok": false, "transcribe_ms": 898.09}
+{"kind": "stt", "ts": 1777924455.596, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1148.85}
+{"kind": "stt", "ts": 1777924461.866, "text": "", "engine": "google", "ok": false, "transcribe_ms": 760.22}
+{"kind": "stt", "ts": 1777924467.06, "text": "", "engine": "google", "ok": false, "transcribe_ms": 547.14}
+{"kind": "stt", "ts": 1777924471.609, "text": "", "engine": "google", "ok": false, "transcribe_ms": 543.56}
+{"kind": "stt", "ts": 1777924477.795, "text": "", "engine": "google", "ok": false, "transcribe_ms": 633.44}
+{"kind": "stt", "ts": 1777924483.822, "text": "", "engine": "google", "ok": false, "transcribe_ms": 765.99}
+{"kind": "stt", "ts": 1777924489.758, "text": "", "engine": "google", "ok": false, "transcribe_ms": 653.63}
+{"kind": "stt", "ts": 1777924495.702, "text": "", "engine": "google", "ok": false, "transcribe_ms": 636.87}
+{"kind": "stt", "ts": 1777924501.802, "text": "", "engine": "google", "ok": false, "transcribe_ms": 806.99}
+{"kind": "stt", "ts": 1777924508.15, "text": "", "engine": "google", "ok": false, "transcribe_ms": 957.37}
+{"kind": "stt", "ts": 1777924579.216, "text": "", "engine": "google", "ok": false, "transcribe_ms": 937.67}
+{"kind": "stt", "ts": 1777924583.292, "text": "", "engine": "google", "ok": false, "transcribe_ms": 688.95}
+{"kind": "stt", "ts": 1777924592.92, "text": "", "engine": "google", "ok": false, "transcribe_ms": 879.2}
+{"kind": "stt", "ts": 1777924595.573, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 663.0}
+{"kind": "stt", "ts": 1777924601.38, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1014.54}
+{"kind": "stt", "ts": 1777924615.044, "text": "", "engine": "google", "ok": false, "transcribe_ms": 770.73}
+{"kind": "stt", "ts": 1777924621.354, "text": "", "engine": "google", "ok": false, "transcribe_ms": 767.33}
+{"kind": "stt", "ts": 1777924624.17, "text": "what do you", "engine": "google", "ok": true, "transcribe_ms": 753.64}
+{"kind": "stt", "ts": 1777924630.626, "text": "how far is the door", "engine": "google", "ok": true, "transcribe_ms": 812.07}
+{"kind": "stt", "ts": 1777924635.57, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1141.35}
+{"kind": "stt", "ts": 1777924639.377, "text": "how far is the door", "engine": "google", "ok": true, "transcribe_ms": 800.87}
+{"kind": "stt", "ts": 1777924642.737, "text": "I do not see the door right now", "engine": "google", "ok": true, "transcribe_ms": 770.97}
+{"kind": "stt", "ts": 1777924651.228, "text": "", "engine": "google", "ok": false, "transcribe_ms": 766.77}
+{"kind": "stt", "ts": 1777924656.277, "text": "how far is the shell", "engine": "google", "ok": true, "transcribe_ms": 936.71}
+{"kind": "stt", "ts": 1777924659.685, "text": "", "engine": "google", "ok": false, "transcribe_ms": 863.05}
+{"kind": "stt", "ts": 1777924670.479, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1004.99}
+{"kind": "stt", "ts": 1777924676.637, "text": "", "engine": "google", "ok": false, "transcribe_ms": 784.11}
+{"kind": "stt", "ts": 1777924683.193, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1257.75}
+{"kind": "stt", "ts": 1777924686.801, "text": "how far is the computer", "engine": "google", "ok": true, "transcribe_ms": 982.84}
+{"kind": "stt", "ts": 1777924691.534, "text": "I do not see the computer right now", "engine": "google", "ok": true, "transcribe_ms": 1190.9}
+{"kind": "stt", "ts": 1777924698.663, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 814.33}
+{"kind": "stt", "ts": 1777924705.669, "text": "what do you see", "engine": "google", "ok": true, "transcribe_ms": 1010.4}
+{"kind": "stt", "ts": 1777924710.884, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1123.67}
+{"kind": "stt", "ts": 1777924719.564, "text": "", "engine": "google", "ok": false, "transcribe_ms": 898.71}
+{"kind": "stt", "ts": 1777924723.554, "text": "how close is the Shelf", "engine": "google", "ok": true, "transcribe_ms": 1067.39}
+{"kind": "stt", "ts": 1777924727.164, "text": "I do not see the shelf right now", "engine": "google", "ok": true, "transcribe_ms": 960.09}
+{"kind": "stt", "ts": 1777924732.932, "text": "", "engine": "google", "ok": false, "transcribe_ms": 567.83}
+{"kind": "stt", "ts": 1777924735.543, "text": "", "engine": "google", "ok": false, "transcribe_ms": 521.01}
+{"kind": "stt", "ts": 1777924738.454, "text": "", "engine": "google", "ok": false, "transcribe_ms": 586.34}
+{"kind": "stt", "ts": 1777924743.179, "text": "guide me", "engine": "google", "ok": true, "transcribe_ms": 1251.58}
+{"kind": "stt", "ts": 1777924746.566, "text": "", "engine": "google", "ok": false, "transcribe_ms": 901.15}
+{"kind": "stt", "ts": 1777924750.544, "text": "what to do", "engine": "google", "ok": true, "transcribe_ms": 794.99}
+{"kind": "stt", "ts": 1777924754.035, "text": "", "engine": "google", "ok": false, "transcribe_ms": 796.16}
+{"kind": "stt", "ts": 1777924759.503, "text": "", "engine": "google", "ok": false, "transcribe_ms": 569.79}
+{"kind": "stt", "ts": 1777924765.999, "text": "", "engine": "google", "ok": false, "transcribe_ms": 658.06}
+{"kind": "stt", "ts": 1777924772.51, "text": "", "engine": "google", "ok": false, "transcribe_ms": 812.6}
+{"kind": "stt", "ts": 1777924775.025, "text": "", "engine": "google", "ok": false, "transcribe_ms": 409.74}
+{"kind": "stt", "ts": 1777924781.561, "text": "", "engine": "google", "ok": false, "transcribe_ms": 823.47}
+{"kind": "stt", "ts": 1777924788.423, "text": "", "engine": "google", "ok": false, "transcribe_ms": 831.09}
+{"kind": "stt", "ts": 1777924794.606, "text": "", "engine": "google", "ok": false, "transcribe_ms": 640.18}
+{"kind": "stt", "ts": 1777924800.468, "text": "", "engine": "google", "ok": false, "transcribe_ms": 667.15}
+{"kind": "stt", "ts": 1777924803.888, "text": "", "engine": "google", "ok": false, "transcribe_ms": 582.28}
+{"kind": "stt", "ts": 1777924808.435, "text": "", "engine": "google", "ok": false, "transcribe_ms": 479.22}
+{"kind": "stt", "ts": 1777924811.294, "text": "", "engine": "google", "ok": false, "transcribe_ms": 432.21}
+{"kind": "stt", "ts": 1777924817.34, "text": "", "engine": "google", "ok": false, "transcribe_ms": 649.52}
+{"kind": "stt", "ts": 1777924823.876, "text": "", "engine": "google", "ok": false, "transcribe_ms": 783.03}
+{"kind": "stt", "ts": 1777924829.793, "text": "", "engine": "google", "ok": false, "transcribe_ms": 635.13}
+{"kind": "stt", "ts": 1777924835.906, "text": "", "engine": "google", "ok": false, "transcribe_ms": 656.2}
+{"kind": "stt", "ts": 1777924841.979, "text": "", "engine": "google", "ok": false, "transcribe_ms": 767.76}
+{"kind": "stt", "ts": 1777924847.918, "text": "", "engine": "google", "ok": false, "transcribe_ms": 740.71}
+{"kind": "stt", "ts": 1777924853.861, "text": "", "engine": "google", "ok": false, "transcribe_ms": 676.28}
+{"kind": "stt", "ts": 1777924859.898, "text": "", "engine": "google", "ok": false, "transcribe_ms": 721.77}
+{"kind": "stt", "ts": 1777924865.948, "text": "", "engine": "google", "ok": false, "transcribe_ms": 791.07}
+{"kind": "stt", "ts": 1777924871.808, "text": "", "engine": "google", "ok": false, "transcribe_ms": 660.18}
+{"kind": "stt", "ts": 1777924876.034, "text": "", "engine": "google", "ok": false, "transcribe_ms": 520.26}
+{"kind": "stt", "ts": 1777924882.023, "text": "", "engine": "google", "ok": false, "transcribe_ms": 700.66}
+{"kind": "stt", "ts": 1777924888.071, "text": "", "engine": "google", "ok": false, "transcribe_ms": 799.1}
+{"kind": "stt", "ts": 1777924892.76, "text": "", "engine": "google", "ok": false, "transcribe_ms": 516.26}
+{"kind": "stt", "ts": 1777924897.049, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1200.0}
+{"kind": "stt", "ts": 1777924902.986, "text": "", "engine": "google", "ok": false, "transcribe_ms": 655.65}
+{"kind": "stt", "ts": 1777924909.073, "text": "", "engine": "google", "ok": false, "transcribe_ms": 720.19}
+{"kind": "stt", "ts": 1777924915.218, "text": "", "engine": "google", "ok": false, "transcribe_ms": 667.8}
+{"kind": "stt", "ts": 1777924919.564, "text": "", "engine": "google", "ok": false, "transcribe_ms": 470.71}
+{"kind": "stt", "ts": 1777924927.497, "text": "up at 8:30", "engine": "google", "ok": true, "transcribe_ms": 987.64}
+{"kind": "stt", "ts": 1777924932.426, "text": "", "engine": "google", "ok": false, "transcribe_ms": 497.11}
+{"kind": "stt", "ts": 1777924937.954, "text": "", "engine": "google", "ok": false, "transcribe_ms": 2094.43}
+{"kind": "stt", "ts": 1777924945.635, "text": "", "engine": "google", "ok": false, "transcribe_ms": 669.62}
+{"kind": "stt", "ts": 1777924951.369, "text": "", "engine": "google", "ok": false, "transcribe_ms": 684.25}
+{"kind": "stt", "ts": 1777924955.455, "text": "", "engine": "google", "ok": false, "transcribe_ms": 523.97}
+{"kind": "stt", "ts": 1777924959.201, "text": "", "engine": "google", "ok": false, "transcribe_ms": 634.87}
+{"kind": "stt", "ts": 1777924965.505, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1038.58}
+{"kind": "stt", "ts": 1777924972.668, "text": "", "engine": "google", "ok": false, "transcribe_ms": 744.88}
+{"kind": "stt", "ts": 1777924980.969, "text": "", "engine": "google", "ok": false, "transcribe_ms": 712.79}
+{"kind": "stt", "ts": 1777924984.053, "text": "", "engine": "google", "ok": false, "transcribe_ms": 521.17}
+{"kind": "stt", "ts": 1777924990.128, "text": "", "engine": "google", "ok": false, "transcribe_ms": 771.48}
+{"kind": "stt", "ts": 1777924993.436, "text": "", "engine": "google", "ok": false, "transcribe_ms": 498.99}
+{"kind": "stt", "ts": 1777925002.422, "text": "", "engine": "google", "ok": false, "transcribe_ms": 6095.14}
+{"kind": "stt", "ts": 1777925005.252, "text": "Lucille", "engine": "google", "ok": true, "transcribe_ms": 721.46}
+{"kind": "stt", "ts": 1777925007.446, "text": "Buy", "engine": "google", "ok": true, "transcribe_ms": 489.57}
+{"kind": "stt", "ts": 1777925015.537, "text": "", "engine": "google", "ok": false, "transcribe_ms": 615.16}
+{"kind": "stt", "ts": 1777925023.875, "text": "", "engine": "google", "ok": false, "transcribe_ms": 627.74}
+{"kind": "stt", "ts": 1777925028.798, "text": "", "engine": "google", "ok": false, "transcribe_ms": 464.25}
+{"kind": "stt", "ts": 1777925033.519, "text": "", "engine": "google", "ok": false, "transcribe_ms": 523.77}
+{"kind": "stt", "ts": 1777925036.489, "text": "", "engine": "google", "ok": false, "transcribe_ms": 542.56}
+{"kind": "stt", "ts": 1777925038.944, "text": "", "engine": "google", "ok": false, "transcribe_ms": 414.66}
+{"kind": "stt", "ts": 1777925045.091, "text": "", "engine": "google", "ok": false, "transcribe_ms": 669.21}
+{"kind": "stt", "ts": 1777925049.237, "text": "", "engine": "google", "ok": false, "transcribe_ms": 560.37}
+{"kind": "stt", "ts": 1777925055.207, "text": "", "engine": "google", "ok": false, "transcribe_ms": 745.93}
+{"kind": "stt", "ts": 1777925061.759, "text": "", "engine": "google", "ok": false, "transcribe_ms": 752.32}
+{"kind": "stt", "ts": 1777925064.793, "text": "", "engine": "google", "ok": false, "transcribe_ms": 455.91}
+{"kind": "stt", "ts": 1777925067.705, "text": "", "engine": "google", "ok": false, "transcribe_ms": 529.87}
+{"kind": "stt", "ts": 1777925073.65, "text": "", "engine": "google", "ok": false, "transcribe_ms": 472.28}
+{"kind": "stt", "ts": 1777925076.755, "text": "", "engine": "google", "ok": false, "transcribe_ms": 548.6}
+{"kind": "stt", "ts": 1777925080.151, "text": "", "engine": "google", "ok": false, "transcribe_ms": 461.25}
+{"kind": "stt", "ts": 1777925082.558, "text": "", "engine": "google", "ok": false, "transcribe_ms": 367.33}
+{"kind": "stt", "ts": 1777925086.816, "text": "", "engine": "google", "ok": false, "transcribe_ms": 534.88}
+{"kind": "stt", "ts": 1777925093.4, "text": "", "engine": "google", "ok": false, "transcribe_ms": 625.28}
+{"kind": "stt", "ts": 1777925096.693, "text": "", "engine": "google", "ok": false, "transcribe_ms": 425.36}
+{"kind": "stt", "ts": 1777925099.021, "text": "", "engine": "google", "ok": false, "transcribe_ms": 415.6}
+{"kind": "stt", "ts": 1777925101.532, "text": "", "engine": "google", "ok": false, "transcribe_ms": 405.82}
+{"kind": "stt", "ts": 1777925108.43, "text": "", "engine": "google", "ok": false, "transcribe_ms": 455.84}
+{"kind": "stt", "ts": 1777925112.575, "text": "", "engine": "google", "ok": false, "transcribe_ms": 588.51}
+{"kind": "stt", "ts": 1777925121.278, "text": "", "engine": "google", "ok": false, "transcribe_ms": 823.65}
+{"kind": "stt", "ts": 1777925126.864, "text": "", "engine": "google", "ok": false, "transcribe_ms": 508.65}
+{"kind": "stt", "ts": 1777925131.629, "text": "", "engine": "google", "ok": false, "transcribe_ms": 502.98}
+{"kind": "stt", "ts": 1777925136.928, "text": "", "engine": "google", "ok": false, "transcribe_ms": 698.58}
+{"kind": "stt", "ts": 1777925143.484, "text": "", "engine": "google", "ok": false, "transcribe_ms": 782.44}
+{"kind": "stt", "ts": 1777925149.005, "text": "", "engine": "google", "ok": false, "transcribe_ms": 640.56}
+{"kind": "stt", "ts": 1777925151.036, "text": "", "engine": "google", "ok": false, "transcribe_ms": 500.97}
+{"kind": "stt", "ts": 1777925153.119, "text": "", "engine": "google", "ok": false, "transcribe_ms": 384.6}
+{"kind": "stt", "ts": 1777925157.816, "text": "", "engine": "google", "ok": false, "transcribe_ms": 499.55}
+{"kind": "stt", "ts": 1777925164.57, "text": "", "engine": "google", "ok": false, "transcribe_ms": 732.09}
+{"kind": "stt", "ts": 1777925172.045, "text": "", "engine": "google", "ok": false, "transcribe_ms": 653.23}
+{"kind": "stt", "ts": 1777925178.268, "text": "", "engine": "google", "ok": false, "transcribe_ms": 687.69}
+{"kind": "stt", "ts": 1777925184.263, "text": "", "engine": "google", "ok": false, "transcribe_ms": 708.43}
+{"kind": "stt", "ts": 1777925190.149, "text": "", "engine": "google", "ok": false, "transcribe_ms": 617.76}
+{"kind": "stt", "ts": 1777925196.621, "text": "", "engine": "google", "ok": false, "transcribe_ms": 950.08}
+{"kind": "stt", "ts": 1777925202.56, "text": "", "engine": "google", "ok": false, "transcribe_ms": 636.44}
+{"kind": "stt", "ts": 1777925209.012, "text": "", "engine": "google", "ok": false, "transcribe_ms": 699.66}
+{"kind": "stt", "ts": 1777925213.578, "text": "", "engine": "google", "ok": false, "transcribe_ms": 566.28}
+{"kind": "stt", "ts": 1777925219.458, "text": "", "engine": "google", "ok": false, "transcribe_ms": 683.43}
+{"kind": "stt", "ts": 1777925225.602, "text": "", "engine": "google", "ok": false, "transcribe_ms": 671.33}
+{"kind": "stt", "ts": 1777925231.626, "text": "", "engine": "google", "ok": false, "transcribe_ms": 671.5}
+{"kind": "stt", "ts": 1777925237.275, "text": "", "engine": "google", "ok": false, "transcribe_ms": 728.05}
+{"kind": "stt", "ts": 1777925243.65, "text": "", "engine": "google", "ok": false, "transcribe_ms": 917.13}
+{"kind": "stt", "ts": 1777925249.06, "text": "", "engine": "google", "ok": false, "transcribe_ms": 454.15}
+{"kind": "stt", "ts": 1777925255.914, "text": "", "engine": "google", "ok": false, "transcribe_ms": 843.8}
+{"kind": "stt", "ts": 1777925260.475, "text": "", "engine": "google", "ok": false, "transcribe_ms": 372.76}
+{"kind": "stt", "ts": 1777925266.743, "text": "", "engine": "google", "ok": false, "transcribe_ms": 775.06}
+{"kind": "stt", "ts": 1777925272.555, "text": "", "engine": "google", "ok": false, "transcribe_ms": 633.74}
+{"kind": "stt", "ts": 1777925275.163, "text": "", "engine": "google", "ok": false, "transcribe_ms": 464.32}
+{"kind": "stt", "ts": 1777925281.744, "text": "", "engine": "google", "ok": false, "transcribe_ms": 634.88}
+{"kind": "stt", "ts": 1777925284.695, "text": "", "engine": "google", "ok": false, "transcribe_ms": 569.65}
+{"kind": "stt", "ts": 1777925291.855, "text": "", "engine": "google", "ok": false, "transcribe_ms": 789.69}
+{"kind": "stt", "ts": 1777925297.265, "text": "", "engine": "google", "ok": false, "transcribe_ms": 568.84}
+{"kind": "stt", "ts": 1777925302.392, "text": "", "engine": "google", "ok": false, "transcribe_ms": 568.01}
+{"kind": "stt", "ts": 1777925308.445, "text": "", "engine": "google", "ok": false, "transcribe_ms": 784.62}
+{"kind": "stt", "ts": 1777925310.775, "text": "", "engine": "google", "ok": false, "transcribe_ms": 374.83}
+{"kind": "stt", "ts": 1777925313.463, "text": "", "engine": "google", "ok": false, "transcribe_ms": 518.73}
+{"kind": "stt", "ts": 1777925317.247, "text": "", "engine": "google", "ok": false, "transcribe_ms": 459.1}
+{"kind": "stt", "ts": 1777925321.65, "text": "", "engine": "google", "ok": false, "transcribe_ms": 560.44}
+{"kind": "stt", "ts": 1777925327.548, "text": "", "engine": "google", "ok": false, "transcribe_ms": 635.58}
+{"kind": "stt", "ts": 1777925334.887, "text": "", "engine": "google", "ok": false, "transcribe_ms": 714.76}
+{"kind": "stt", "ts": 1777925340.842, "text": "", "engine": "google", "ok": false, "transcribe_ms": 642.99}
+{"kind": "stt", "ts": 1777925344.574, "text": "", "engine": "google", "ok": false, "transcribe_ms": 524.85}
+{"kind": "stt", "ts": 1777925348.158, "text": "", "engine": "google", "ok": false, "transcribe_ms": 578.42}
+{"kind": "stt", "ts": 1777925353.603, "text": "", "engine": "google", "ok": false, "transcribe_ms": 701.81}
+{"kind": "stt", "ts": 1777925358.015, "text": "", "engine": "google", "ok": false, "transcribe_ms": 647.88}
+{"kind": "stt", "ts": 1777925364.536, "text": "", "engine": "google", "ok": false, "transcribe_ms": 919.92}
+{"kind": "stt", "ts": 1777925370.665, "text": "", "engine": "google", "ok": false, "transcribe_ms": 699.98}
+{"kind": "stt", "ts": 1777925374.724, "text": "", "engine": "google", "ok": false, "transcribe_ms": 622.98}
+{"kind": "stt", "ts": 1777925378.901, "text": "", "engine": "google", "ok": false, "transcribe_ms": 617.09}
+{"kind": "stt", "ts": 1777925385.021, "text": "", "engine": "google", "ok": false, "transcribe_ms": 773.97}
+{"kind": "stt", "ts": 1777925390.908, "text": "", "engine": "google", "ok": false, "transcribe_ms": 588.23}
+{"kind": "stt", "ts": 1777925397.853, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1082.27}
+{"kind": "stt", "ts": 1777925404.075, "text": "", "engine": "google", "ok": false, "transcribe_ms": 874.34}
+{"kind": "stt", "ts": 1777925410.539, "text": "", "engine": "google", "ok": false, "transcribe_ms": 838.41}
+{"kind": "stt", "ts": 1777925416.171, "text": "", "engine": "google", "ok": false, "transcribe_ms": 634.98}
+{"kind": "stt", "ts": 1777925421.598, "text": "", "engine": "google", "ok": false, "transcribe_ms": 593.38}
+{"kind": "stt", "ts": 1777925427.378, "text": "", "engine": "google", "ok": false, "transcribe_ms": 620.31}
+{"kind": "stt", "ts": 1777925433.399, "text": "", "engine": "google", "ok": false, "transcribe_ms": 610.59}
+{"kind": "stt", "ts": 1777925440.439, "text": "", "engine": "google", "ok": false, "transcribe_ms": 816.9}
+{"kind": "stt", "ts": 1777925446.891, "text": "", "engine": "google", "ok": false, "transcribe_ms": 819.0}
+{"kind": "stt", "ts": 1777925452.708, "text": "", "engine": "google", "ok": false, "transcribe_ms": 618.9}
+{"kind": "stt", "ts": 1777925461.321, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1139.08}
+{"kind": "stt", "ts": 1777925467.167, "text": "", "engine": "google", "ok": false, "transcribe_ms": 559.34}
+{"kind": "stt", "ts": 1777925473.246, "text": "", "engine": "google", "ok": false, "transcribe_ms": 793.96}
+{"kind": "stt", "ts": 1777925479.353, "text": "", "engine": "google", "ok": false, "transcribe_ms": 687.2}
+{"kind": "stt", "ts": 1777925485.33, "text": "", "engine": "google", "ok": false, "transcribe_ms": 565.89}
+{"kind": "stt", "ts": 1777925491.554, "text": "", "engine": "google", "ok": false, "transcribe_ms": 699.3}
+{"kind": "stt", "ts": 1777925497.522, "text": "", "engine": "google", "ok": false, "transcribe_ms": 637.26}
+{"kind": "stt", "ts": 1777925503.55, "text": "", "engine": "google", "ok": false, "transcribe_ms": 697.53}
+{"kind": "stt", "ts": 1777925509.666, "text": "", "engine": "google", "ok": false, "transcribe_ms": 641.12}
+{"kind": "stt", "ts": 1777925516.136, "text": "", "engine": "google", "ok": false, "transcribe_ms": 646.02}
+{"kind": "stt", "ts": 1777925522.308, "text": "", "engine": "google", "ok": false, "transcribe_ms": 792.63}
+{"kind": "stt", "ts": 1777925526.121, "text": "", "engine": "google", "ok": false, "transcribe_ms": 516.38}
+{"kind": "stt", "ts": 1777925532.681, "text": "", "engine": "google", "ok": false, "transcribe_ms": 672.73}
+{"kind": "stt", "ts": 1777925535.185, "text": "", "engine": "google", "ok": false, "transcribe_ms": 407.71}
+{"kind": "stt", "ts": 1777925541.925, "text": "", "engine": "google", "ok": false, "transcribe_ms": 688.01}
+{"kind": "stt", "ts": 1777925548.167, "text": "", "engine": "google", "ok": false, "transcribe_ms": 828.84}
+{"kind": "stt", "ts": 1777925554.311, "text": "", "engine": "google", "ok": false, "transcribe_ms": 705.41}
+{"kind": "stt", "ts": 1777925558.714, "text": "", "engine": "google", "ok": false, "transcribe_ms": 588.71}
+{"kind": "stt", "ts": 1777925562.119, "text": "", "engine": "google", "ok": false, "transcribe_ms": 430.65}
+{"kind": "stt", "ts": 1777925566.394, "text": "", "engine": "google", "ok": false, "transcribe_ms": 629.44}
+{"kind": "stt", "ts": 1777925570.046, "text": "", "engine": "google", "ok": false, "transcribe_ms": 541.17}
+{"kind": "stt", "ts": 1777925572.48, "text": "", "engine": "google", "ok": false, "transcribe_ms": 459.22}
+{"kind": "stt", "ts": 1777925578.385, "text": "", "engine": "google", "ok": false, "transcribe_ms": 638.53}
+{"kind": "stt", "ts": 1777925580.82, "text": "", "engine": "google", "ok": false, "transcribe_ms": 422.7}
+{"kind": "stt", "ts": 1777925587.039, "text": "", "engine": "google", "ok": false, "transcribe_ms": 661.04}
+{"kind": "stt", "ts": 1777925593.14, "text": "", "engine": "google", "ok": false, "transcribe_ms": 694.24}
+{"kind": "stt", "ts": 1777925599.332, "text": "", "engine": "google", "ok": false, "transcribe_ms": 752.05}
+{"kind": "stt", "ts": 1777925605.419, "text": "", "engine": "google", "ok": false, "transcribe_ms": 692.37}
+{"kind": "stt", "ts": 1777925609.037, "text": "", "engine": "google", "ok": false, "transcribe_ms": 445.92}
+{"kind": "stt", "ts": 1777925615.734, "text": "", "engine": "google", "ok": false, "transcribe_ms": 768.55}
+{"kind": "stt", "ts": 1777925621.633, "text": "", "engine": "google", "ok": false, "transcribe_ms": 694.34}
+{"kind": "stt", "ts": 1777925624.374, "text": "", "engine": "google", "ok": false, "transcribe_ms": 419.5}
+{"kind": "stt", "ts": 1777925630.834, "text": "", "engine": "google", "ok": false, "transcribe_ms": 726.34}
+{"kind": "stt", "ts": 1777925636.95, "text": "", "engine": "google", "ok": false, "transcribe_ms": 765.75}
+{"kind": "stt", "ts": 1777925642.695, "text": "", "engine": "google", "ok": false, "transcribe_ms": 628.08}
+{"kind": "stt", "ts": 1777925648.597, "text": "", "engine": "google", "ok": false, "transcribe_ms": 639.02}
+{"kind": "stt", "ts": 1777925654.521, "text": "I'm going to say Hello Kitty on 98", "engine": "google", "ok": true, "transcribe_ms": 1254.06}
+{"kind": "stt", "ts": 1777925657.207, "text": "", "engine": "google", "ok": false, "transcribe_ms": 426.43}
+{"kind": "stt", "ts": 1777925663.429, "text": "", "engine": "google", "ok": false, "transcribe_ms": 700.07}
+{"kind": "stt", "ts": 1777925665.672, "text": "", "engine": "google", "ok": false, "transcribe_ms": 389.93}
+{"kind": "stt", "ts": 1777925667.72, "text": "", "engine": "google", "ok": false, "transcribe_ms": 388.73}
+{"kind": "stt", "ts": 1777925673.739, "text": "", "engine": "google", "ok": false, "transcribe_ms": 584.59}
+{"kind": "stt", "ts": 1777925679.739, "text": "", "engine": "google", "ok": false, "transcribe_ms": 585.26}
+{"kind": "stt", "ts": 1777925685.798, "text": "", "engine": "google", "ok": false, "transcribe_ms": 625.34}
+{"kind": "stt", "ts": 1777925691.842, "text": "", "engine": "google", "ok": false, "transcribe_ms": 844.86}
+{"kind": "stt", "ts": 1777925697.721, "text": "", "engine": "google", "ok": false, "transcribe_ms": 633.03}
+{"kind": "stt", "ts": 1777925704.094, "text": "", "engine": "google", "ok": false, "transcribe_ms": 639.37}
+{"kind": "stt", "ts": 1777925710.26, "text": "", "engine": "google", "ok": false, "transcribe_ms": 856.41}
+{"kind": "stt", "ts": 1777925716.298, "text": "", "engine": "google", "ok": false, "transcribe_ms": 710.11}
+{"kind": "stt", "ts": 1777925719.203, "text": "", "engine": "google", "ok": false, "transcribe_ms": 526.92}
+{"kind": "stt", "ts": 1777925725.056, "text": "", "engine": "google", "ok": false, "transcribe_ms": 763.72}
+{"kind": "stt", "ts": 1777925732.695, "text": "", "engine": "google", "ok": false, "transcribe_ms": 691.72}
+{"kind": "stt", "ts": 1777925738.724, "text": "", "engine": "google", "ok": false, "transcribe_ms": 680.96}
+{"kind": "stt", "ts": 1777925742.537, "text": "", "engine": "google", "ok": false, "transcribe_ms": 623.55}
+{"kind": "stt", "ts": 1777925745.857, "text": "", "engine": "google", "ok": false, "transcribe_ms": 377.36}
+{"kind": "stt", "ts": 1777925752.006, "text": "", "engine": "google", "ok": false, "transcribe_ms": 736.15}
+{"kind": "stt", "ts": 1777925754.936, "text": "", "engine": "google", "ok": false, "transcribe_ms": 478.11}
+{"kind": "stt", "ts": 1777925759.858, "text": "", "engine": "google", "ok": false, "transcribe_ms": 493.23}
+{"kind": "stt", "ts": 1777925764.291, "text": "", "engine": "google", "ok": false, "transcribe_ms": 511.28}
+{"kind": "stt", "ts": 1777925770.303, "text": "", "engine": "google", "ok": false, "transcribe_ms": 705.53}
+{"kind": "stt", "ts": 1777925773.426, "text": "", "engine": "google", "ok": false, "transcribe_ms": 563.02}
+{"kind": "stt", "ts": 1777925779.052, "text": "", "engine": "google", "ok": false, "transcribe_ms": 598.76}
+{"kind": "stt", "ts": 1777925782.553, "text": "", "engine": "google", "ok": false, "transcribe_ms": 515.01}
+{"kind": "stt", "ts": 1777925787.788, "text": "", "engine": "google", "ok": false, "transcribe_ms": 694.92}
+{"kind": "stt", "ts": 1777925792.155, "text": "", "engine": "google", "ok": false, "transcribe_ms": 865.79}
+{"kind": "stt", "ts": 1777925799.882, "text": "", "engine": "google", "ok": false, "transcribe_ms": 625.15}
+{"kind": "stt", "ts": 1777925805.974, "text": "", "engine": "google", "ok": false, "transcribe_ms": 751.52}
+{"kind": "stt", "ts": 1777925809.204, "text": "", "engine": "google", "ok": false, "transcribe_ms": 529.97}
+{"kind": "stt", "ts": 1777925815.246, "text": "", "engine": "google", "ok": false, "transcribe_ms": 776.2}
+{"kind": "stt", "ts": 1777925819.738, "text": "", "engine": "google", "ok": false, "transcribe_ms": 569.02}
+{"kind": "stt", "ts": 1777925826.922, "text": "", "engine": "google", "ok": false, "transcribe_ms": 769.25}
+{"kind": "stt", "ts": 1777925830.298, "text": "", "engine": "google", "ok": false, "transcribe_ms": 475.38}
+{"kind": "stt", "ts": 1777925836.652, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1050.43}
+{"kind": "stt", "ts": 1777925838.946, "text": "", "engine": "google", "ok": false, "transcribe_ms": 465.16}
+{"kind": "stt", "ts": 1777925841.865, "text": "", "engine": "google", "ok": false, "transcribe_ms": 473.75}
+{"kind": "stt", "ts": 1777925849.147, "text": "set alarm for", "engine": "google", "ok": true, "transcribe_ms": 1914.73}
+{"kind": "stt", "ts": 1777925853.256, "text": "no", "engine": "google", "ok": true, "transcribe_ms": 480.98}
+{"kind": "stt", "ts": 1777925861.842, "text": "", "engine": "google", "ok": false, "transcribe_ms": 591.34}
+{"kind": "stt", "ts": 1777925867.946, "text": "", "engine": "google", "ok": false, "transcribe_ms": 751.59}
+{"kind": "stt", "ts": 1777925873.892, "text": "", "engine": "google", "ok": false, "transcribe_ms": 690.12}
+{"kind": "stt", "ts": 1777925879.769, "text": "", "engine": "google", "ok": false, "transcribe_ms": 592.06}
+{"kind": "stt", "ts": 1777925881.767, "text": "", "engine": "google", "ok": false, "transcribe_ms": 356.2}
+{"kind": "stt", "ts": 1777925887.853, "text": "", "engine": "google", "ok": false, "transcribe_ms": 737.16}
+{"kind": "stt", "ts": 1777925894.304, "text": "", "engine": "google", "ok": false, "transcribe_ms": 690.34}
+{"kind": "stt", "ts": 1777925900.454, "text": "", "engine": "google", "ok": false, "transcribe_ms": 713.98}
+{"kind": "stt", "ts": 1777925906.528, "text": "", "engine": "google", "ok": false, "transcribe_ms": 637.72}
+{"kind": "stt", "ts": 1777925911.825, "text": "", "engine": "google", "ok": false, "transcribe_ms": 633.83}
+{"kind": "stt", "ts": 1777925917.756, "text": "", "engine": "google", "ok": false, "transcribe_ms": 671.05}
+{"kind": "stt", "ts": 1777925923.899, "text": "", "engine": "google", "ok": false, "transcribe_ms": 791.76}
+{"kind": "stt", "ts": 1777925930.452, "text": "", "engine": "google", "ok": false, "transcribe_ms": 879.86}
+{"kind": "stt", "ts": 1777925936.493, "text": "", "engine": "google", "ok": false, "transcribe_ms": 732.48}
+{"kind": "stt", "ts": 1777925942.421, "text": "", "engine": "google", "ok": false, "transcribe_ms": 664.88}
+{"kind": "stt", "ts": 1777925948.475, "text": "", "engine": "google", "ok": false, "transcribe_ms": 701.73}
+{"kind": "stt", "ts": 1777925954.502, "text": "", "engine": "google", "ok": false, "transcribe_ms": 629.62}
+{"kind": "stt", "ts": 1777925956.647, "text": "", "engine": "google", "ok": false, "transcribe_ms": 377.36}
+{"kind": "stt", "ts": 1777925962.913, "text": "", "engine": "google", "ok": false, "transcribe_ms": 635.93}
+{"kind": "stt", "ts": 1777925968.956, "text": "", "engine": "google", "ok": false, "transcribe_ms": 779.18}
+{"kind": "stt", "ts": 1777925975.116, "text": "", "engine": "google", "ok": false, "transcribe_ms": 875.35}
+{"kind": "stt", "ts": 1777925977.198, "text": "", "engine": "google", "ok": false, "transcribe_ms": 339.04}
+{"kind": "stt", "ts": 1777925983.087, "text": "", "engine": "google", "ok": false, "transcribe_ms": 610.03}
+{"kind": "stt", "ts": 1777925988.924, "text": "", "engine": "google", "ok": false, "transcribe_ms": 787.74}
+{"kind": "stt", "ts": 1777925994.966, "text": "", "engine": "google", "ok": false, "transcribe_ms": 652.83}
+{"kind": "stt", "ts": 1777926001.11, "text": "", "engine": "google", "ok": false, "transcribe_ms": 826.22}
+{"kind": "stt", "ts": 1777926004.96, "text": "", "engine": "google", "ok": false, "transcribe_ms": 414.09}
+{"kind": "stt", "ts": 1777926007.225, "text": "", "engine": "google", "ok": false, "transcribe_ms": 291.34}
+{"kind": "stt", "ts": 1777926010.609, "text": "", "engine": "google", "ok": false, "transcribe_ms": 463.36}
+{"kind": "stt", "ts": 1777926014.035, "text": "", "engine": "google", "ok": false, "transcribe_ms": 505.16}
+{"kind": "stt", "ts": 1777926021.852, "text": "", "engine": "google", "ok": false, "transcribe_ms": 663.21}
+{"kind": "stt", "ts": 1777926028.042, "text": "", "engine": "google", "ok": false, "transcribe_ms": 758.8}
+{"kind": "stt", "ts": 1777926034.042, "text": "", "engine": "google", "ok": false, "transcribe_ms": 715.03}
+{"kind": "stt", "ts": 1777926039.616, "text": "", "engine": "google", "ok": false, "transcribe_ms": 654.56}
+{"kind": "stt", "ts": 1777926045.593, "text": "", "engine": "google", "ok": false, "transcribe_ms": 607.11}
+{"kind": "stt", "ts": 1777926051.984, "text": "", "engine": "google", "ok": false, "transcribe_ms": 865.67}
+{"kind": "stt", "ts": 1777926058.067, "text": "", "engine": "google", "ok": false, "transcribe_ms": 655.81}
+{"kind": "stt", "ts": 1777926064.284, "text": "", "engine": "google", "ok": false, "transcribe_ms": 825.19}
+{"kind": "stt", "ts": 1777926070.241, "text": "", "engine": "google", "ok": false, "transcribe_ms": 668.21}
+{"kind": "stt", "ts": 1777926075.555, "text": "", "engine": "google", "ok": false, "transcribe_ms": 691.34}
+{"kind": "stt", "ts": 1777926082.375, "text": "", "engine": "google", "ok": false, "transcribe_ms": 596.28}
+{"kind": "stt", "ts": 1777926085.814, "text": "", "engine": "google", "ok": false, "transcribe_ms": 445.14}
+{"kind": "stt", "ts": 1777926090.725, "text": "", "engine": "google", "ok": false, "transcribe_ms": 543.87}
+{"kind": "stt", "ts": 1777926093.202, "text": "", "engine": "google", "ok": false, "transcribe_ms": 394.85}
+{"kind": "stt", "ts": 1777926098.291, "text": "", "engine": "google", "ok": false, "transcribe_ms": 661.01}
+{"kind": "stt", "ts": 1777926102.753, "text": "", "engine": "google", "ok": false, "transcribe_ms": 545.47}
+{"kind": "stt", "ts": 1777926106.071, "text": "", "engine": "google", "ok": false, "transcribe_ms": 446.79}
+{"kind": "stt", "ts": 1777926112.495, "text": "", "engine": "google", "ok": false, "transcribe_ms": 740.07}
+{"kind": "stt", "ts": 1777926116.701, "text": "", "engine": "google", "ok": false, "transcribe_ms": 503.0}
+{"kind": "stt", "ts": 1777926124.261, "text": "", "engine": "google", "ok": false, "transcribe_ms": 892.19}
+{"kind": "stt", "ts": 1777926131.131, "text": "", "engine": "google", "ok": false, "transcribe_ms": 733.02}
+{"kind": "stt", "ts": 1777926133.845, "text": "", "engine": "google", "ok": false, "transcribe_ms": 434.31}
+{"kind": "stt", "ts": 1777926140.932, "text": "", "engine": "google", "ok": false, "transcribe_ms": 759.67}
+{"kind": "stt", "ts": 1777926144.928, "text": "", "engine": "google", "ok": false, "transcribe_ms": 396.19}
+{"kind": "stt", "ts": 1777926149.593, "text": "", "engine": "google", "ok": false, "transcribe_ms": 639.98}
+{"kind": "stt", "ts": 1777926153.852, "text": "", "engine": "google", "ok": false, "transcribe_ms": 465.88}
+{"kind": "stt", "ts": 1777926160.048, "text": "", "engine": "google", "ok": false, "transcribe_ms": 763.14}
+{"kind": "stt", "ts": 1777926165.88, "text": "", "engine": "google", "ok": false, "transcribe_ms": 693.89}
+{"kind": "stt", "ts": 1777926172.275, "text": "", "engine": "google", "ok": false, "transcribe_ms": 480.21}
+{"kind": "stt", "ts": 1777926179.504, "text": "", "engine": "google", "ok": false, "transcribe_ms": 620.7}
+{"kind": "stt", "ts": 1777926184.483, "text": "", "engine": "google", "ok": false, "transcribe_ms": 427.77}
+{"kind": "stt", "ts": 1777926189.428, "text": "", "engine": "google", "ok": false, "transcribe_ms": 748.7}
+{"kind": "stt", "ts": 1777926192.035, "text": "", "engine": "google", "ok": false, "transcribe_ms": 393.33}
+{"kind": "stt", "ts": 1777926194.084, "text": "", "engine": "google", "ok": false, "transcribe_ms": 341.8}
+{"kind": "stt", "ts": 1777926200.255, "text": "", "engine": "google", "ok": false, "transcribe_ms": 470.16}
+{"kind": "stt", "ts": 1777926204.143, "text": "", "engine": "google", "ok": false, "transcribe_ms": 395.09}
+{"kind": "stt", "ts": 1777926206.88, "text": "", "engine": "google", "ok": false, "transcribe_ms": 403.67}
+{"kind": "stt", "ts": 1777926215.698, "text": "", "engine": "google", "ok": false, "transcribe_ms": 577.48}
+{"kind": "stt", "ts": 1777926222.458, "text": "give me a sandwich please tell me", "engine": "google", "ok": true, "transcribe_ms": 1138.79}
+{"kind": "stt", "ts": 1777926227.277, "text": "", "engine": "google", "ok": false, "transcribe_ms": 708.28}
+{"kind": "stt", "ts": 1777926235.907, "text": "", "engine": "google", "ok": false, "transcribe_ms": 708.95}
+{"kind": "stt", "ts": 1777926242.036, "text": "", "engine": "google", "ok": false, "transcribe_ms": 817.29}
+{"kind": "stt", "ts": 1777956722.189, "text": "", "engine": "google", "ok": false, "transcribe_ms": 860.48}
+{"kind": "stt", "ts": 1777956727.189, "text": "", "engine": "google", "ok": false, "transcribe_ms": 760.27}
+{"kind": "stt", "ts": 1777956733.355, "text": "", "engine": "google", "ok": false, "transcribe_ms": 927.84}
+{"kind": "stt", "ts": 1777956736.055, "text": "", "engine": "google", "ok": false, "transcribe_ms": 568.71}
+{"kind": "stt", "ts": 1777956740.039, "text": "", "engine": "google", "ok": false, "transcribe_ms": 489.58}
+{"kind": "stt", "ts": 1777956744.702, "text": "shutting down", "engine": "google", "ok": true, "transcribe_ms": 676.37}
+{"kind": "stt", "ts": 1777979938.885, "text": "", "engine": "google", "ok": false, "transcribe_ms": 3037.59}
+{"kind": "stt", "ts": 1777979941.532, "text": "", "engine": "google", "ok": false, "transcribe_ms": 625.84}
+{"kind": "stt", "ts": 1777979943.873, "text": "", "engine": "google", "ok": false, "transcribe_ms": 649.2}
+{"kind": "stt", "ts": 1777979949.717, "text": "Papa", "engine": "google", "ok": true, "transcribe_ms": 1167.32}
+{"kind": "stt", "ts": 1777979956.277, "text": "mobile app", "engine": "google", "ok": true, "transcribe_ms": 1298.95}
+{"kind": "stt", "ts": 1777979959.325, "text": "", "engine": "google", "ok": false, "transcribe_ms": 639.95}
+{"kind": "stt", "ts": 1777979961.612, "text": "", "engine": "google", "ok": false, "transcribe_ms": 390.81}
+{"kind": "stt", "ts": 1777979965.434, "text": "Elizabethtown Kentucky", "engine": "google", "ok": true, "transcribe_ms": 1053.62}
+{"kind": "stt", "ts": 1777979967.348, "text": "", "engine": "google", "ok": false, "transcribe_ms": 416.39}
+{"kind": "stt", "ts": 1777979973.944, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1145.32}
+{"kind": "stt", "ts": 1777979977.624, "text": "", "engine": "google", "ok": false, "transcribe_ms": 682.59}
+{"kind": "stt", "ts": 1777979986.206, "text": "", "engine": "google", "ok": false, "transcribe_ms": 2890.05}
+{"kind": "stt", "ts": 1777979995.902, "text": "", "engine": "google", "ok": false, "transcribe_ms": 861.72}
+{"kind": "stt", "ts": 1777979999.844, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1388.09}
+{"kind": "stt", "ts": 1777980003.622, "text": "", "engine": "google", "ok": false, "transcribe_ms": 601.35}
+{"kind": "stt", "ts": 1777980009.109, "text": "", "engine": "google", "ok": false, "transcribe_ms": 871.02}
+{"kind": "stt", "ts": 1777980013.144, "text": "", "engine": "google", "ok": false, "transcribe_ms": 1013.99}
+{"kind": "stt", "ts": 1777980017.071, "text": "", "engine": "google", "ok": false, "transcribe_ms": 820.97}
+{"kind": "stt", "ts": 1777980021.393, "text": "", "engine": "google", "ok": false, "transcribe_ms": 850.73}
+{"kind": "stt", "ts": 1777980025.502, "text": "", "engine": "google", "ok": false, "transcribe_ms": 828.0}
+{"kind": "stt", "ts": 1777980030.99, "text": "on texting", "engine": "google", "ok": true, "transcribe_ms": 1246.42}
+{"kind": "stt", "ts": 1777980033.45, "text": "", "engine": "google", "ok": false, "transcribe_ms": 780.39}
+{"kind": "stt", "ts": 1777980038.735, "text": "how do I change", "engine": "google", "ok": true, "transcribe_ms": 1577.83}
+{"kind": "stt", "ts": 1777980044.14, "text": "", "engine": "google", "ok": false, "transcribe_ms": 2470.61}
+{"kind": "stt", "ts": 1777980051.928, "text": "", "engine": "google", "ok": false, "transcribe_ms": 4286.28}

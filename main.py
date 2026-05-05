@@ -276,6 +276,10 @@ def main():
 
             cv2.imshow(win, rendered)
             try:
+                pipeline._lidar_server.push_annotated_frame(rendered)
+            except Exception:
+                pass
+            try:
                 pipeline.push_phone_render(rendered)
                 voice_status = "off"
                 if speech is not None:

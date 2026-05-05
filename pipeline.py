@@ -539,12 +539,25 @@ class Pipeline:
 
     def _capture_loop(self):
         frame_id = 0
+        _lidar_video_logged = False
         while self._running:
             if self._config.paused:
                 time.sleep(0.03)
                 continue
             t0 = time.perf_counter()
-            ret, frame = self._cap.read()
+
+            # Prefer iOS ARKit video when connected (higher quality, no WebRTC overhead)
+            ios_video = self._lidar_server.latest_video()
+            if ios_video is not None:
+                if not _lidar_video_logged:
+                    logger.info("iOS ARKit video active — using as primary camera source")
+                    _lidar_video_logged = True
+                frame = ios_video.bgr
+                ret = True
+            else:
+                _lidar_video_logged = False
+                ret, frame = self._cap.read()
+
             if not ret or frame is None:
                 logger.warning("Camera read failed — retrying")
                 time.sleep(0.1)
